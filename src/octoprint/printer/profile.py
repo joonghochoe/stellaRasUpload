@@ -210,27 +210,28 @@ class PrinterProfileManager(object):
 		model = "Generic RepRap Printer",
 		color = "default",
 		volume=dict(
-			width = 200,
-			depth = 200,
-			height = 200,
+			width = 330,
+			depth = 330,
+			height = 400,
 			formFactor = BedFormFactor.RECTANGULAR,
 			origin = BedOrigin.LOWERLEFT,
 			custom_box = False
 		),
 		heatedBed = True,
 		extruder=dict(
-			count = 1,
+			count = 2,
 			offsets = [
-				(0, 0)
+				(0, 0),
+				(18, 0)
 			],
-			nozzleDiameter = 0.4,
+			nozzleDiameter = 0.6,
 			sharedNozzle = False
 		),
 		axes=dict(
-			x = dict(speed=6000, inverted=False),
-			y = dict(speed=6000, inverted=False),
-			z = dict(speed=200, inverted=False),
-			e = dict(speed=300, inverted=False)
+			x = dict(speed=12000, inverted=False),
+			y = dict(speed=12000, inverted=False),
+			z = dict(speed=400, inverted=False),
+			e = dict(speed=600, inverted=False)
 		)
 	)
 
