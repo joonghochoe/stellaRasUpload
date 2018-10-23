@@ -7,30 +7,27 @@ $(function() {
         self.colorTransparent = parameters[0].appearance_colorTransparent;
 
         self.brand = ko.pureComputed(function() {
-// STELLAMOVE
-//            if (self.name())
-//                return self.name();
-//            else
-//                return gettext("OctoPrint");
-            return ""
+            // STELLAMOVE
+            if (self.name())
+                return self.name();
+            else
+                return gettext("Uploader");
         });
 
         self.fullbrand = ko.pureComputed(function() {
-// STELLAMOVE
-//            if (self.name())
-//                return gettext("OctoPrint") + ": " + self.name();
-//            else
-//                return gettext("OctoPrint");
-            return ""
+            // STELLAMOVE
+            if (self.name())
+                return gettext("Uploader") + ": " + self.name();
+            else
+                return gettext("Uploader");
         });
 
         self.title = ko.pureComputed(function() {
-// STELLAMOVE
-//            if (self.name())
-//                return self.name() + " [" + gettext("OctoPrint") + "]";
-//            else
-//                return gettext("OctoPrint");
-            return ""
+            // STELLAMOVE
+            if (self.name())
+                return self.name() + " [" + gettext("Uploader") + "]";
+            else
+                return gettext("Uploader");
         });
     }
 

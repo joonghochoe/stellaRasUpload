@@ -542,37 +542,40 @@ def fetch_template_data(refresh=False):
 	# sidebar
 
 	templates["sidebar"]["entries"] = dict(
-		connection=(gettext("Connection"), dict(template="sidebar/connection.jinja2", _div="connection", icon="signal", styles_wrapper=["display: none"], data_bind="visible: loginState.isUser", template_header="sidebar/connection_header.jinja2")),
-		state=(gettext("State"), dict(template="sidebar/state.jinja2", _div="state", icon="info-circle")),
+		# STELLAMOVE
+		# connection=(gettext("Connection"), dict(template="sidebar/connection.jinja2", _div="connection", icon="signal", styles_wrapper=["display: none"], data_bind="visible: loginState.isUser", template_header="sidebar/connection_header.jinja2")),
+		# state=(gettext("State"), dict(template="sidebar/state.jinja2", _div="state", icon="info-circle")),
 		files=(gettext("Files"), dict(template="sidebar/files.jinja2", _div="files", icon="list", classes_content=["overflow_visible"], template_header="sidebar/files_header.jinja2"))
 	)
 
 	# tabs
 
-	templates["tab"]["entries"] = dict(
-		temperature=(gettext("Temperature"), dict(template="tabs/temperature.jinja2", _div="temp")),
-		control=(gettext("Control"), dict(template="tabs/control.jinja2", _div="control")),
-		gcodeviewer=(gettext("GCode Viewer"), dict(template="tabs/gcodeviewer.jinja2", _div="gcode")),
-		terminal=(gettext("Terminal"), dict(template="tabs/terminal.jinja2", _div="term")),
-		timelapse=(gettext("Timelapse"), dict(template="tabs/timelapse.jinja2", _div="timelapse"))
-	)
+	# STELLAMOVE
+	# templates["tab"]["entries"] = dict(
+	# 	temperature=(gettext("Temperature"), dict(template="tabs/temperature.jinja2", _div="temp")),
+	# 	control=(gettext("Control"), dict(template="tabs/control.jinja2", _div="control")),
+	# 	gcodeviewer=(gettext("GCode Viewer"), dict(template="tabs/gcodeviewer.jinja2", _div="gcode")),
+	# 	terminal=(gettext("Terminal"), dict(template="tabs/terminal.jinja2", _div="term")),
+	# 	timelapse=(gettext("Timelapse"), dict(template="tabs/timelapse.jinja2", _div="timelapse"))
+	# )
 
 	# settings dialog
 
 	templates["settings"]["entries"] = dict(
-		section_printer=(gettext("Printer"), None),
-
-		serial=(gettext("Serial Connection"), dict(template="dialogs/settings/serialconnection.jinja2", _div="settings_serialConnection", custom_bindings=False)),
-		printerprofiles=(gettext("Printer Profiles"), dict(template="dialogs/settings/printerprofiles.jinja2", _div="settings_printerProfiles", custom_bindings=False)),
-		temperatures=(gettext("Temperatures"), dict(template="dialogs/settings/temperatures.jinja2", _div="settings_temperature", custom_bindings=False)),
-		terminalfilters=(gettext("Terminal Filters"), dict(template="dialogs/settings/terminalfilters.jinja2", _div="settings_terminalFilters", custom_bindings=False)),
-		gcodescripts=(gettext("GCODE Scripts"), dict(template="dialogs/settings/gcodescripts.jinja2", _div="settings_gcodeScripts", custom_bindings=False)),
+		# STELLAMOVE
+		# section_printer=(gettext("Printer"), None),
+		#
+		# serial=(gettext("Serial Connection"), dict(template="dialogs/settings/serialconnection.jinja2", _div="settings_serialConnection", custom_bindings=False)),
+		# printerprofiles=(gettext("Printer Profiles"), dict(template="dialogs/settings/printerprofiles.jinja2", _div="settings_printerProfiles", custom_bindings=False)),
+		# temperatures=(gettext("Temperatures"), dict(template="dialogs/settings/temperatures.jinja2", _div="settings_temperature", custom_bindings=False)),
+		# terminalfilters=(gettext("Terminal Filters"), dict(template="dialogs/settings/terminalfilters.jinja2", _div="settings_terminalFilters", custom_bindings=False)),
+		# gcodescripts=(gettext("GCODE Scripts"), dict(template="dialogs/settings/gcodescripts.jinja2", _div="settings_gcodeScripts", custom_bindings=False)),
 
 		section_features=(gettext("Features"), None),
 
-		features=(gettext("Features"), dict(template="dialogs/settings/features.jinja2", _div="settings_features", custom_bindings=False)),
-		webcam=(gettext("Webcam & Timelapse"), dict(template="dialogs/settings/webcam.jinja2", _div="settings_webcam", custom_bindings=False)),
-		gcodevisualizer=(gettext("GCODE Visualizer"), dict(template="dialogs/settings/gcodevisualizer.jinja2", _div="settings_gcodegcodevisualizer", custom_bindings=False)),
+		# features=(gettext("Features"), dict(template="dialogs/settings/features.jinja2", _div="settings_features", custom_bindings=False)),
+		# webcam=(gettext("Webcam & Timelapse"), dict(template="dialogs/settings/webcam.jinja2", _div="settings_webcam", custom_bindings=False)),
+		# gcodevisualizer=(gettext("GCODE Visualizer"), dict(template="dialogs/settings/gcodevisualizer.jinja2", _div="settings_gcodegcodevisualizer", custom_bindings=False)),
 		api=(gettext("API"), dict(template="dialogs/settings/api.jinja2", _div="settings_api", custom_bindings=False)),
 
 		section_octoprint=(gettext("OctoPrint"), None),

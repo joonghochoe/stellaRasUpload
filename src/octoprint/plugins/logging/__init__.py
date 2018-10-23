@@ -189,8 +189,9 @@ class LoggingPlugin(octoprint.plugin.AssetPlugin,
 		return logger and (logger.startswith("octoprint") or logger.startswith("tornado"))
 
 	def get_template_configs(self):
+		# STELLAMOVE
 		return [
-			dict(type="settings", custom_bindings=True)
+			dict(type="settings", name=gettext("Logging"), custom_bindings=True)
 		]
 
 	def get_assets(self):
