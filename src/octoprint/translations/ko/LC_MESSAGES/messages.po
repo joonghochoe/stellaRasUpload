@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: StellaRasPrint\n"
 "Report-Msgid-Bugs-To: i18n@octoprint.org\n"
 "POT-Creation-Date: 2018-07-25 13:37+0200\n"
-"PO-Revision-Date: 2018-10-23 11:11+0900\n"
+"PO-Revision-Date: 2018-10-23 12:20+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -397,6 +397,12 @@ msgid ""
 "    normal operation, allowing you to uninstall or update them to a newer "
 "version.\n"
 msgstr ""
+"\n"
+"    타사 플러그인의 특정 버전으로 알려진 심각한 문제를 방지하기 위해 서버는 플러"
+"그인 버전 블랙리스트를\n"
+"    사용하여 이러한 플러그인 버전을 자동으로 비활성화할 수 있고 이를 제거하거나 "
+"최신 버전으로 업데이트할\n"
+"    수 있습니다.\n"
 
 #: src/octoprint/plugins/corewizard/templates/corewizard_pluginblacklist_wizard.jinja2:9
 #: src/octoprint/templates/snippets/settings/server/serverPluginBlacklistDescription.jinja2:7
@@ -408,6 +414,11 @@ msgid ""
 "    can also take a look at in a more human readable format <a href=\"%(url)s\" "
 "target=\"_blank\">here</a>.\n"
 msgstr ""
+"\n"
+"    기본적으로 서버는 <code>plugins.octoprint.org/blacklist.json</code>에서 호스"
+"팅되는 블랙리스트를 사용합니다. 이 블랙리스트는\n"
+"    사람이 읽을 수 있는 형식으로 볼 수도 있습니다. <a href=\"%(url)s\" target="
+"\"_blank\">여기</a>를 클릭하십시오.\n"
 
 #: src/octoprint/plugins/corewizard/templates/corewizard_pluginblacklist_wizard.jinja2:14
 msgid ""
@@ -417,6 +428,10 @@ msgid ""
 "    You may also change your decision at any time through Settings > Server "
 "right from within OctoPrint.\n"
 msgstr ""
+"\n"
+"    다음 서버 시작부터 블랙리스트 가져오기 및 사용을 허용할지 여부를 결정하십시"
+"오. 서버내에서\n"
+"     설정> 서버 오른쪽에서 언제든지 결정을 변경할 수 있습니다.\n"
 
 #: src/octoprint/plugins/corewizard/templates/corewizard_pluginblacklist_wizard.jinja2:20
 msgid "Disable Plugin Blacklist Processing"
@@ -433,6 +448,10 @@ msgid ""
 "strong>.\n"
 "    "
 msgstr ""
+"\n"
+"        플러그인 블랙리스트 처리는 <strong class=\"text-success\">사용</strong>"
+"입니다.\n"
+"    "
 
 #: src/octoprint/plugins/corewizard/templates/corewizard_pluginblacklist_wizard.jinja2:28
 msgid ""
@@ -441,6 +460,10 @@ msgid ""
 "strong>.\n"
 "    "
 msgstr ""
+"\n"
+"        플러그인 블랙리스트 처리는 <strong class=\"text-success\">사용중지</"
+"strong>입니다.\n"
+"    "
 
 #: src/octoprint/plugins/corewizard/templates/corewizard_printerprofile_wizard.jinja2:1
 msgid "Set up your printer profile"
@@ -453,6 +476,8 @@ msgid ""
 "to OctoPrint, you can also configure additional printer profiles under Settings "
 "> Printer Profiles"
 msgstr ""
+"아래 설정이 장비와 일치하는지 확인하십시오. 둘 이상의 장비를 서버에 연결하려는\n"
+"경우 설정> 장비 프로파일에서 추가 프로파일을 구성할 수 있습니다"
 
 #: src/octoprint/plugins/corewizard/templates/corewizard_printerprofile_wizard.jinja2:7
 #: src/octoprint/plugins/cura/templates/cura_settings.jinja2:1
@@ -4102,7 +4127,7 @@ msgstr "연결 확인"
 
 #: src/octoprint/templates/dialogs/settings/server.jinja2:13
 msgid "Plugin blacklist processing"
-msgstr ""
+msgstr "플러그인 블랙리스트 처리"
 
 #: src/octoprint/templates/dialogs/settings/temperatures.jinja2:2
 msgid "Graph"
@@ -4160,7 +4185,7 @@ msgstr ""
 msgid ""
 "If you do not wish to change your password, just leave the following fields "
 "empty."
-msgstr ""
+msgstr "암호를 변경하지 않으려면 다음 필드를 비워 두십시오."
 
 #: src/octoprint/templates/dialogs/usersettings/access.jinja2:32
 msgid ""
@@ -4780,6 +4805,11 @@ msgid ""
 "such plugins before they can interfere\n"
 "    with normal operation.\n"
 msgstr ""
+"\n"
+"    <strong>특정 버전의 타사 플러그인으로 알려진 심각한 문제를 방지하기 위해</"
+"strong> 서버는 플러그인 버전 블랙리스트를\n"
+"    사용하여 정상적인 작동을 방해하기 전에 자동으로 해당 플러그인을 비활성화합니"
+"다.\n"
 
 #: src/octoprint/templates/snippets/settings/server/serverPluginBlacklistEnabled.jinja2:4
 msgid "Enable plugin blacklist processing on startup"
@@ -4798,7 +4828,7 @@ msgstr ""
 
 #: src/octoprint/templates/snippets/settings/server/serverPluginBlacklistTtl.jinja2:2
 msgid "Blacklist cache TTL"
-msgstr ""
+msgstr "블랙리스트 캐시 TTL"
 
 #: src/octoprint/templates/snippets/settings/server/serverPluginBlacklistUrl.jinja2:1
 msgid "Plugin blacklist URL. You should normally not have to change this."
@@ -4810,7 +4840,7 @@ msgstr "블랙리스트 URL"
 
 #: src/octoprint/templates/snippets/settings/webcam/ffmpegBitrate.jinja2:1
 msgid "Bitrate to use for encoding the timelapse video"
-msgstr ""
+msgstr "타임랩스 비디오 인코딩에 사용할 비트 전송률"
 
 #: src/octoprint/templates/snippets/settings/webcam/ffmpegBitrate.jinja2:2
 msgid "Timelapse bitrate"
@@ -4866,7 +4896,7 @@ msgstr ""
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamSnapshotUrl.jinja2:2
 msgid "Snapshot URL"
-msgstr ""
+msgstr "스냅샷 URL"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamSnapshotUrl.jinja2:8
 msgid "Fully qualified URL, needs to be reachable by OctoPrint's server"
@@ -5024,7 +5054,7 @@ msgstr "층 정보"
 
 #: src/octoprint/templates/tabs/gcodeviewer.jinja2:35
 msgid "Renderer options"
-msgstr ""
+msgstr "랜더러 옵션"
 
 #: src/octoprint/templates/tabs/gcodeviewer.jinja2:39
 msgid "Sync with job progress"
@@ -5060,7 +5090,7 @@ msgstr ""
 
 #: src/octoprint/templates/tabs/gcodeviewer.jinja2:73
 msgid "Reload"
-msgstr ""
+msgstr "재로드"
 
 #: src/octoprint/templates/tabs/gcodeviewer.jinja2:81
 msgid "Show visited bounding box"
@@ -5307,7 +5337,7 @@ msgstr "날짜별 정렬"
 #: src/octoprint/templates/tabs/timelapse.jinja2:109
 #: src/octoprint/templates/tabs/timelapse.jinja2:154
 msgid "Select all on this page"
-msgstr ""
+msgstr "이 페이지에서 모두 선택"
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:110
 #: src/octoprint/templates/tabs/timelapse.jinja2:155
