@@ -178,9 +178,9 @@ default_settings = {
 		},
 		"maxSize": 100 * 1024, # 100 KB
 		"commands": {
-			"systemShutdownCommand": None,
-			"systemRestartCommand": None,
-			"serverRestartCommand": None
+			"systemShutdownCommand": "sudo shutdown -h now",
+			"systemRestartCommand": "sudo shutdown -r now",
+			"serverRestartCommand": "sudo service octoprint restart"
 		},
 		"onlineCheck": {
 			"enabled": None,
