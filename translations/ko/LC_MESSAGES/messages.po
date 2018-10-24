@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: StellaRasPrint\n"
 "Report-Msgid-Bugs-To: i18n@octoprint.org\n"
 "POT-Creation-Date: 2018-07-25 13:37+0200\n"
-"PO-Revision-Date: 2018-10-24 09:29+0900\n"
+"PO-Revision-Date: 2018-10-24 15:55+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -573,7 +573,7 @@ msgstr "시스템 관련 명령"
 
 #: src/octoprint/plugins/corewizard/templates/corewizard_webcam_wizard.jinja2:1
 msgid "Webcam &amp; Timelapse Recordings"
-msgstr ""
+msgstr "웹캠 &amp; 타임랩스 녹화"
 
 #: src/octoprint/plugins/corewizard/templates/corewizard_webcam_wizard.jinja2:3
 msgid ""
@@ -581,6 +581,9 @@ msgid ""
 "    If you have a webcam, you may now configure it here.\n"
 "</p>"
 msgstr ""
+"<p>\n"
+"    웹캠이 있으면 여기에서 구성 할 수 있습니다.\n"
+"</p>"
 
 #: src/octoprint/plugins/corewizard/templates/corewizard_webcam_wizard.jinja2:7
 #: src/octoprint/templates/dialogs/settings/webcam.jinja2:1
@@ -612,6 +615,28 @@ msgid ""
 "strong>.\n"
 "</p>"
 msgstr ""
+"<p>\n"
+"    <strong>스트림 URL</strong>은 실제 웹캠 스트림 (MJPG 스트림이어야 함)을\n"
+"    웹 인터페이스에 퍼갈 때 사용하는 URL입니다. 이렇게 하려면 <strong>브라우저</"
+"strong> 에서\n"
+"    연결할 수 있어야 합니다.\n"
+"</p><p>\n"
+"    It may be\n"
+"    <ul>\n"
+"        <li>a fully qualified URL (<code>http://host:port/path</code>),</li>\n"
+"        <li>a URL defaulting to the protocol used for accessing the web\n"
+"            interface (e.g. <code>//host:port/path</code>),</li>\n"
+"        <li>an absolute path on the same host as OctoPrint (e.g. <code>/"
+"absolute/path</code>) or</li>\n"
+"        <li>a relative path on the same host as OctoPrint (e.g. <code>relative/"
+"path</code>)</li>\n"
+"    </ul>\n"
+"</p><p>\n"
+"    <strong>스냅 샷 URL </strong>은 시간 경과 기록을 만들기 위해 웹캠에서\n"
+"    단일 이미지를 가져 오는 데 사용하는 URL입니다. 이것은 <strong>서버</strong>"
+"에서 \n"
+"    도달할 수 있는 완전한 URL이어야 합니다 .\n"
+"</p>"
 
 #: src/octoprint/plugins/corewizard/templates/corewizard_webcam_wizard.jinja2:33
 #: src/octoprint/templates/dialogs/settings/webcam.jinja2:16
@@ -625,6 +650,10 @@ msgid ""
 "    know the correct <strong>path to FFMPEG</strong>.\n"
 "</p>"
 msgstr ""
+"<p>\n"
+"    스냅샷을 타임랩스 기록으로 렌더링하려면 정확한\n"
+"    <strong>FFMPEG 경로</strong>를 알아야합니다.\n"
+"</p>"
 
 #: src/octoprint/plugins/cura/static/js/cura.js:234
 #: src/octoprint/static/js/app/viewmodels/settings.js:419
@@ -907,15 +936,15 @@ msgstr ""
 
 #: src/octoprint/plugins/octopi_support/static/js/octopi_support.js:32
 msgid "running on"
-msgstr ""
+msgstr "실행중"
 
 #: src/octoprint/plugins/octopi_support/static/js/octopi_support.js:32
 msgid "OctoPi"
-msgstr ""
+msgstr "서버"
 
 #: src/octoprint/plugins/octopi_support/templates/octopi_support_about.jinja2:1
 msgid "About OctoPi"
-msgstr ""
+msgstr "서버 정보"
 
 #: src/octoprint/plugins/pluginmanager/__init__.py:150
 msgid "Plugin Manager"
@@ -984,12 +1013,12 @@ msgstr "사용 중지"
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:545
 #, python-format
 msgid "Installing plugin \"%(name)s\" from %(url)s..."
-msgstr ""
+msgstr "%(url)s에서 플러그인 \"%(name)s\" 설치..."
 
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:547
 #, python-format
 msgid "Installing plugin from %(url)s..."
-msgstr ""
+msgstr "%(url)s에서 플러그인 설치..."
 
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:550
 msgid "Reinstalling plugin..."
@@ -998,7 +1027,7 @@ msgstr "플러그인 재설치 중..."
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:551
 #, python-format
 msgid "Reinstalling plugin \"%(name)s\" from %(url)s..."
-msgstr ""
+msgstr "%(url)s에서 플러그인 \"%(name)s\" 설치..."
 
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:597
 msgid "Uninstalling plugin..."
@@ -1007,7 +1036,7 @@ msgstr "플러그인 삭제..."
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:597
 #, python-format
 msgid "Uninstalling plugin \"%(name)s\""
-msgstr ""
+msgstr "플러그인 \"%(name)s\" 제거"
 
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:711
 msgid "Reinstall"
@@ -1076,6 +1105,9 @@ msgid ""
 "general setup that might also apply to prints run directly from your printer's "
 "internal storage)."
 msgstr ""
+"<strong>서버를 다시 시작합니다.</strong> </p><p>이 작업을 수행하면 장비의 컨트롤"
+"러 및 일반 설정에 따라 장비 내부 저장소에서 직접 실행되는 출력물에 적용될 수 있"
+"는 진행 중인 출력 작업이 중단 될 수 있습니다."
 
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:789
 msgid "Restart in progress"
@@ -1377,13 +1409,14 @@ msgstr ""
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:249
 msgid "Plugin repository configuration"
-msgstr ""
+msgstr "플러그인 저장소 구성"
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:251
 msgid ""
 "URL of the Plugin Repository to use. You should normally not have to change "
 "this."
 msgstr ""
+"사용할 플러그인 저장소의 URL입니다. 일반적으로 이것을 변경하지 않아야 합니다."
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:252
 msgid "Repository URL"
@@ -1475,7 +1508,7 @@ msgstr "경고!"
 
 #: src/octoprint/plugins/printer_safety_check/templates/printer_safety_check_sidebar.jinja2:5
 msgid "Learn more..."
-msgstr ""
+msgstr "더 보기..."
 
 #: src/octoprint/plugins/softwareupdate/__init__.py:570
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_wizard.jinja2:1
@@ -1491,7 +1524,7 @@ msgstr "소프트웨어 업데이트"
 #: src/octoprint/static/js/app/viewmodels/appearance.js:27
 #: src/octoprint/templates/dialogs/about/about.jinja2:1
 msgid "OctoPrint"
-msgstr ""
+msgstr "서버"
 
 #: src/octoprint/plugins/softwareupdate/__init__.py:1144
 msgid ""
@@ -1516,7 +1549,7 @@ msgstr ""
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:290
 msgid "unknown"
-msgstr ""
+msgstr "알 수 없음"
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:304
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:507
@@ -1550,11 +1583,11 @@ msgstr ""
 msgid ""
 "To have updates applied, get in touch with an administrator of this OctoPrint "
 "instance."
-msgstr ""
+msgstr "업데이트를 적용하려면 서버 관리자에게 문의하십시오."
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:334
 msgid "Update Available"
-msgstr ""
+msgstr "업데이트 사용 가능"
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:346
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:372
@@ -1567,6 +1600,8 @@ msgid ""
 "You can make this message display again via \"Settings\" > \"Software Update\" "
 "> \"Check for update now\""
 msgstr ""
+"\"설정\" > \"소프트웨어 업데이트\" > \"지금 업데이트 확인\"을 통해 이 메시지를 "
+"다시 표시할 수 있습니다"
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:354
 msgid "Update now"
@@ -1574,7 +1609,7 @@ msgstr "지금 업데이트"
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:392
 msgid "Everything is up-to-date"
-msgstr ""
+msgstr "모두 최신입니다"
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:416
 msgid "No internet connection"
@@ -1586,33 +1621,36 @@ msgstr "업데이트 불가능"
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:431
 msgid "Unknown update check, configuration ok?"
-msgstr ""
+msgstr "알 수 없는 업데이트 확인, 구성이 맞습니까?"
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:434
 msgid "Cannot check for update, need online connection"
-msgstr ""
+msgstr "업데이트를 확인할 수 없으며 온라인 연결이 필요합니다"
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:437
 msgid "Network error while checking for update"
-msgstr ""
+msgstr "업데이트를 확인하는 동안 네트워크 오류가 발생했습니다"
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:440
 msgid "Unknown error while checking for update, please check the logs"
 msgstr ""
+"업데이트를 확인하는 중 알 수 없는 오류가 발생했습니다. 로그를 확인하십시오"
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:508
 msgid "Now updating, please wait."
-msgstr ""
+msgstr "지금 업데이트 중입니다. 잠시 기다려주십시오."
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:526
 msgid "Update not started!"
-msgstr ""
+msgstr "업데이트가 시작되지 않았습니다!"
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:527
 msgid ""
 "The update could not be started. Is it already active? Please consult octoprint."
 "log for details."
 msgstr ""
+"업데이트를 시작할 수 없습니다. 이미 활성화되어 있습니까? 자세한 내용은 로를 참조"
+"하십시오."
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:553
 msgid "Can't update while printing"
@@ -1623,10 +1661,11 @@ msgid ""
 "A print job is currently in progress. Updating will be prevented until it is "
 "done."
 msgstr ""
+"출력 작업이 진행 중입니다. 업데이트가 완료될 때까지 업데이트가 중지됩니다."
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:559
 msgid "This will update the following components and restart the server:"
-msgstr ""
+msgstr "이렇게 하면 다음 구성 요소가 업데이트되고 서버가 다시 시작됩니다:"
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:570
 msgid ""
@@ -1794,41 +1833,43 @@ msgstr "모두 업데이트"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:63
 msgid "Check for update now"
-msgstr ""
+msgstr "지금 업데이트 확인"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:68
 msgid "Last cache refresh:"
-msgstr ""
+msgstr "마지막 캐시 새로 고침 :"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:69
 msgid "Force check for update (overrides cache used for update checks)"
-msgstr ""
+msgstr "업데이트 강제 확인 (업데이트 확인에 사용되는 캐시 무시)"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:70
 msgid "Force update now (even if no new versions are available)"
-msgstr ""
+msgstr "지금 강제 업데이트 (새 버전을 사용할 수 없는 경우에도)"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:85
 msgid "Version cache TTL"
-msgstr ""
+msgstr "버전 캐시 TTL"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:96
 msgid "Show update notifications to users"
-msgstr ""
+msgstr "사용자에게 업데이트 알림 표시"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:97
 msgid ""
 "If you uncheck this, only logged in admins will see update notifications. "
 "Update notifications shown to users do not include the \"Update now\" button."
 msgstr ""
+"이 선택을 취소하는 경우 관리자 로그인만 업데이트 알림이 표시됩니다. 사용자에게 "
+"표시되는 업데이트 알림은 \"지금 업데이트\" 단추를 포함하지 않습니다."
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:115
 msgid "Update in progress, please wait."
-msgstr ""
+msgstr "업데이트 진행 중, 기다려 주세요."
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:116
 msgid "Update done, please close this window."
-msgstr ""
+msgstr "업데이트가 완료되었습니다.이 창을 닫으십시오."
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_wizard.jinja2:3
 msgid ""
@@ -1841,6 +1882,14 @@ msgid ""
 "configure that here.\n"
 "</p>"
 msgstr ""
+"<p>\n"
+"    기본적으로 서버는 <code>pip</code>를 통해 게시된 릴리즈로 업데이트됩니다. 서"
+"버는 수동으로\n"
+"    체크아웃해야하는 임의의 개발 브랜치에 <code>git</code>를 통해 자체 업데이트 "
+"할 수도 있습니다.\n"
+"    체크 아웃 폴더를 알아야 하지만 그렇게 하고 싶다면 여기에서 구성할 수 있습니"
+"다.\n"
+"</p>"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_wizard.jinja2:14
 msgid ""
@@ -1850,10 +1899,15 @@ msgid ""
 "    branch however, you should setup \"Commit\" tracking.\n"
 "</p>"
 msgstr ""
+"<p>\n"
+"    릴리즈 버전을 실행 중인 경우 '릴리즈' 추적 상태로 두십시오. 그러나 다른 브랜"
+"치을 실행하는 경우\n"
+"    \"커밋\" 추적을 설정해야 합니다.\n"
+"</p>"
 
 #: src/octoprint/plugins/softwareupdate/templates/snippets/plugins/softwareupdate/checkoutFolder.jinja2:2
 msgid "OctoPrint checkout folder"
-msgstr ""
+msgstr "체크아웃 폴더"
 
 #: src/octoprint/plugins/softwareupdate/templates/snippets/plugins/softwareupdate/checkoutFolder.jinja2:5
 msgid "This needs to be set if you select commit based version tracking."
@@ -1861,7 +1915,7 @@ msgstr "이는 커밋 기반 버전 추적을 선택하는 경우 설정해야 �
 
 #: src/octoprint/plugins/softwareupdate/templates/snippets/plugins/softwareupdate/releaseChannel.jinja2:2
 msgid "OctoPrint Release Channel"
-msgstr ""
+msgstr "릴리즈 채널"
 
 #: src/octoprint/plugins/softwareupdate/templates/snippets/plugins/softwareupdate/releaseChannel.jinja2:5
 #, python-format
@@ -1870,10 +1924,13 @@ msgid ""
 "noopener\">\"How to use the release channels to help test release candidates\"</"
 "a> before switching to a release channel other than \"Stable\""
 msgstr ""
+"\"안정\"이외의 릴리즈 채널로 전환하기 전에 <a href=\"%(url)s\" target=\"_blank"
+"\" rel=\"noreferrer noopener\">\" 릴리즈 채널을 사용하여 릴리즈 후보 테스트\"</"
+"a> 도움말을 읽었는지 확인하십시오."
 
 #: src/octoprint/plugins/softwareupdate/templates/snippets/plugins/softwareupdate/versionTracking.jinja2:2
 msgid "OctoPrint version tracking"
-msgstr ""
+msgstr "버전 추적"
 
 #: src/octoprint/server/views.py:487
 msgid "Plugins"
@@ -2550,7 +2607,7 @@ msgstr "로그인"
 #: src/octoprint/static/js/app/viewmodels/loginstate.js:33
 #, python-format
 msgid "Logged in as %(name)s"
-msgstr ""
+msgstr "%(name)s로 로그인했습니다"
 
 #: src/octoprint/static/js/app/viewmodels/loginstate.js:105
 msgid "Login successful"
@@ -3527,7 +3584,7 @@ msgstr ""
 
 #: src/octoprint/templates/dialogs/settings/features.jinja2:46
 msgid "Terminal Auto Uppercase Blacklist"
-msgstr ""
+msgstr "터미널 자동 대문자 블랙리스트"
 
 #: src/octoprint/templates/dialogs/settings/features.jinja2:49
 msgid ""
@@ -3535,6 +3592,8 @@ msgid ""
 "automatically uppercased in the terminal tab. Just the G or M code, comma "
 "separated."
 msgstr ""
+"이 옵션을 사용하여 터미널 탭에 매개 변수가 자동으로 대문자가 아니어야 하는 명령"
+"을 지정합니다. G 코드 또는 M 코드만 쉼표로 구분됩니다."
 
 #: src/octoprint/templates/dialogs/settings/folders.jinja2:5
 msgid "Upload Folder"
@@ -3554,13 +3613,15 @@ msgstr "로그 폴더"
 
 #: src/octoprint/templates/dialogs/settings/folders.jinja2:45
 msgid "Watched Folder"
-msgstr ""
+msgstr "감시 폴더"
 
 #: src/octoprint/templates/dialogs/settings/folders.jinja2:57
 msgid ""
 "Actively poll the watched folder. Check this if files in your watched folder "
 "aren't automatically added otherwise."
 msgstr ""
+"감시 폴더를 적극적으로 폴링합니다. 감시 폴더의 파일이 자동으로 추가되지 않으면 "
+"이 옵션을 선택하십시오."
 
 #: src/octoprint/templates/dialogs/settings/folders.jinja2:62
 msgid "Disk space thresholds"
@@ -3645,7 +3706,7 @@ msgstr "G 코드 시각화 활성화"
 
 #: src/octoprint/templates/dialogs/settings/gcodevisualizer.jinja2:9
 msgid "Maximum size the GCodeViewer autoloads the file for preview"
-msgstr ""
+msgstr "G 코드뷰어에서 미리 보기를 위한 파일을 자동 로드 하는 최대 크기"
 
 #: src/octoprint/templates/dialogs/settings/gcodevisualizer.jinja2:10
 msgid "GCode Visualizer file size threshold"
@@ -5256,11 +5317,11 @@ msgstr "파일에서 전송되는 온도 명령에 적용할 오프셋"
 
 #: src/octoprint/templates/tabs/temperature.jinja2:27
 msgid "Fine adjust: -1°C"
-msgstr ""
+msgstr "미세조정: -1°C"
 
 #: src/octoprint/templates/tabs/temperature.jinja2:30
 msgid "Fine adjust: +1°C"
-msgstr ""
+msgstr "미세조정: +1°C"
 
 #: src/octoprint/templates/tabs/temperature.jinja2:33
 msgid "Set"
@@ -5313,7 +5374,7 @@ msgstr ""
 
 #: src/octoprint/templates/tabs/terminal.jinja2:41
 msgid "Force fancy functionality"
-msgstr ""
+msgstr "팬시 기능 강제 적용"
 
 #: src/octoprint/templates/tabs/terminal.jinja2:42
 msgid "Force terminal output during printing"
@@ -5342,13 +5403,15 @@ msgstr "타임랩스 모드"
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:17
 msgid "Note"
-msgstr ""
+msgstr "주의"
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:17
 msgid ""
 "Does not work when printing from the printer's SD Card (no way to detect the "
 "change in Z reliably). Use \"Timed\" mode for those prints instead."
 msgstr ""
+"장비의 SD 카드에서 인쇄할 때 작동하지 않습니다 (Z의 변경을 안정적으로 감지할 방"
+"법이 없음). 대신 \"시간 초과\" 모드를 사용하십시오."
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:22
 msgid "Minimum interval"
@@ -5413,11 +5476,11 @@ msgstr "변경사항 저장"
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:87
 msgid "Reset to active configuration"
-msgstr ""
+msgstr "활성 구성으로 재설정"
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:93
 msgid "Finished Timelapses"
-msgstr ""
+msgstr "종료된 타임랩스"
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:100
 msgid "Sort by date"
@@ -5445,7 +5508,7 @@ msgstr "선택 삭제"
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:148
 msgid "Unrendered Timelapses"
-msgstr ""
+msgstr "랜더링되지 않은 타임랩스"
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:167
 msgid "Frames"
@@ -5453,7 +5516,7 @@ msgstr "프레임"
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:180
 msgid "Delete unrendered timelapse"
-msgstr ""
+msgstr "랜더링되지 않은 타임랩스 삭제"
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:180
 msgid "Render timelapse"
