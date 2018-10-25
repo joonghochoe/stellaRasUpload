@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: StellaRasPrint\n"
 "Report-Msgid-Bugs-To: i18n@octoprint.org\n"
 "POT-Creation-Date: 2018-07-25 13:37+0200\n"
-"PO-Revision-Date: 2018-10-26 05:54+0900\n"
+"PO-Revision-Date: 2018-10-26 08:24+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Last-Translator: Joongho Choe <joongho.choe@gmail.com>\n"
 "Language-Team: joongho.choe@gmail.com\n"
 "Language: ko\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2\n"
 
 #: src/octoprint/plugins/action_command_prompt/__init__.py:93
 msgid "Action Command Prompt"
@@ -1709,7 +1709,7 @@ msgstr ""
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:711
 #, python-format
 msgid "Now updating %(name)s to %(version)s"
-msgstr "%(name)s을 %(version)s로 업데이트 중입니다."
+msgstr "%(name)s을 %(version)s로 업데이트 중입니다"
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:730
 msgid "Update successful, restarting!"
@@ -2059,6 +2059,8 @@ msgid ""
 "general setup that might also apply to prints run directly from your printer's "
 "internal storage)."
 msgstr ""
+"<strong>시스템을 종료하려고합니다.</strong></p><p>이 작업을 수행하면 진행중인 작"
+"업이 중단될 수 있습니다."
 
 #: src/octoprint/server/api/system.py:173
 msgid "Reboot system"
@@ -2071,6 +2073,8 @@ msgid ""
 "general setup that might also apply to prints run directly from your printer's "
 "internal storage)."
 msgstr ""
+"<strong>시스템을 재부팅하려고합니다.</strong></p><p>이 작업을 수행하면 진행중인 "
+"작업이 중단될 수 있습니다."
 
 #: src/octoprint/server/api/system.py:177
 #: src/octoprint/templates/snippets/settings/server/serverCommandServerRestart.jinja2:2
@@ -2084,6 +2088,8 @@ msgid ""
 "controller and general setup that might also apply to prints run directly from "
 "your printer's internal storage)."
 msgstr ""
+"<strong>서버를 다시 시작하려고합니다.</strong></p><p>이 작업을 수행하면 장비 및 "
+"일반 설정에 따라 진행중인 작업이 중단될 수 있습니다."
 
 #: src/octoprint/server/api/system.py:181
 msgid "Restart OctoPrint in safe mode"
@@ -2096,6 +2102,8 @@ msgid ""
 "printer's controller and general setup that might also apply to prints run "
 "directly from your printer's internal storage)."
 msgstr ""
+"<strong>서버를 안전 모드로 다시 시작하려고 합니다.</strong></p><p>이 작업은 장"
+"비 및 일반 설정에 따라 작업에 영향을 줄 수 있습니다."
 
 #: src/octoprint/static/js/app/dataupdater.js:90
 #: src/octoprint/static/js/app/dataupdater.js:109
@@ -2521,11 +2529,11 @@ msgstr ""
 
 #: src/octoprint/static/js/app/viewmodels/files.js:952
 msgid "Streaming ..."
-msgstr ""
+msgstr "스트리밍중..."
 
 #: src/octoprint/static/js/app/viewmodels/files.js:964
 msgid "Streaming done"
-msgstr ""
+msgstr "스트리밍 완료"
 
 #: src/octoprint/static/js/app/viewmodels/files.js:965
 #, python-format
@@ -2572,7 +2580,7 @@ msgstr "분석완료"
 
 #: src/octoprint/static/js/app/viewmodels/gcode.js:531
 msgid "Estimated total print time"
-msgstr ""
+msgstr "총 예상 출력 시간"
 
 #: src/octoprint/static/js/app/viewmodels/gcode.js:532
 msgid "Estimated layer height"
@@ -2605,7 +2613,7 @@ msgstr ""
 
 #: src/octoprint/static/js/app/viewmodels/gcode.js:565
 msgid "GCODE commands"
-msgstr "G 코드 명ㄹ"
+msgstr "G 코드 명령"
 
 #: src/octoprint/static/js/app/viewmodels/loginstate.js:27
 #: src/octoprint/static/js/app/viewmodels/loginstate.js:35
@@ -2962,7 +2970,7 @@ msgstr ""
 
 #: src/octoprint/static/js/app/viewmodels/slicing.js:191
 msgid "Start the slicing process"
-msgstr ""
+msgstr "슬라이싱 시작"
 
 #: src/octoprint/static/js/app/viewmodels/system.js:52
 #, python-format
@@ -3251,7 +3259,7 @@ msgstr "슬라이서를 선택..."
 
 #: src/octoprint/templates/dialogs/slicing.jinja2:20
 msgid "Runs locally"
-msgstr ""
+msgstr "로컬에서 실행"
 
 #: src/octoprint/templates/dialogs/slicing.jinja2:23
 msgid "For performance reasons locally run slicers are disabled while printing"
@@ -3311,11 +3319,11 @@ msgstr "오프셋 삭제"
 #: src/octoprint/templates/dialogs/temperature.jinja2:25
 msgid ""
 "Hint: Hitting <kbd>Enter</kbd> in the input field will also submit the form"
-msgstr ""
+msgstr "힌트: 입력 필드에서 <kbd>엔터</kbd>를 치면 폼도 전송됩니다"
 
 #: src/octoprint/templates/dialogs/wizard.jinja2:3
 msgid "Setup Wizard"
-msgstr ""
+msgstr "설치 마법사"
 
 #: src/octoprint/templates/dialogs/wizard.jinja2:41
 msgid ""
@@ -3462,7 +3470,7 @@ msgstr "색상"
 
 #: src/octoprint/templates/dialogs/settings/appearance.jinja2:15
 msgid "For acrylic printers ;)"
-msgstr ""
+msgstr "아크릴 장비용"
 
 #: src/octoprint/templates/dialogs/settings/appearance.jinja2:18
 msgid "Transparent Color"
@@ -3511,6 +3519,8 @@ msgid ""
 "Until a repository is available, please see <a href=\"%(url)s\" target=\"_blank"
 "\" >the wiki</a> for language packs provided by the community."
 msgstr ""
+"저장소가 제공될 때까지 커뮤니티에서 제공하는 언어팩에 대한 <a href=\"%(url)s\" "
+"target=\"_blank\">위키</a>를 참조하십시오."
 
 #: src/octoprint/templates/dialogs/settings/appearance.jinja2:61
 msgid "Available Language Packs"
@@ -3591,10 +3601,12 @@ msgid ""
 "This is used by the GCODE analysis in the backend and the viewer in the "
 "frontend to interpret your sliced files correctly."
 msgstr ""
+"백엔드의 G 코드 분석과 프론트엔드의 뷰어가 슬라이스된 파일을 올바르게 해석하는"
+"데 사용됩니다."
 
 #: src/octoprint/templates/dialogs/settings/features.jinja2:45
 msgid "Commands to not completely auto uppercase in the terminal tab"
-msgstr ""
+msgstr "터미널 탭에서 자동으로 대문자로 변환하지 않는 명령"
 
 #: src/octoprint/templates/dialogs/settings/features.jinja2:46
 msgid "Terminal Auto Uppercase Blacklist"
@@ -3838,7 +3850,7 @@ msgstr ""
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:69
 msgid "When printing or idle"
-msgstr ""
+msgstr "출력중이거나 대기중"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:76
 msgid "When idle and a target temperature is set"
@@ -3902,7 +3914,7 @@ msgstr ""
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:113
 msgid "Communication timeout"
-msgstr ""
+msgstr "통신 시간 제한"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:119
 msgid "<code>busy</code> protocol support not detected"
@@ -4003,7 +4015,7 @@ msgstr "펌웨어 별 설정"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:200
 msgid "Enable automatic firmware detection"
-msgstr ""
+msgstr "자동 펌웨어 감지 사용"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:201
 msgid ""
@@ -4646,7 +4658,7 @@ msgstr "사용자"
 
 #: src/octoprint/templates/sidebar/state.jinja2:7
 msgid "Current timelapse configuration"
-msgstr ""
+msgstr "현재 타임랩스 설정"
 
 #: src/octoprint/templates/sidebar/state.jinja2:11
 msgid "Estimated total print time based on analysis of the file or past prints"
@@ -5010,11 +5022,11 @@ msgstr "타임랩스 속도"
 
 #: src/octoprint/templates/snippets/settings/webcam/ffmpegPath.jinja2:1
 msgid "Full path to the FFMPEG binary"
-msgstr ""
+msgstr "FFMPEG 실행파일의 전체 경로"
 
 #: src/octoprint/templates/snippets/settings/webcam/ffmpegPath.jinja2:2
 msgid "Path to FFMPEG"
-msgstr ""
+msgstr "FFMPEG 경로"
 
 #: src/octoprint/templates/snippets/settings/webcam/ffmpegThreads.jinja2:1
 msgid "Number of FFMPEG encoding threads"
@@ -5026,19 +5038,19 @@ msgstr ""
 
 #: src/octoprint/templates/snippets/settings/webcam/watermark.jinja2:4
 msgid "Enable OctoPrint watermark in timelapse movies"
-msgstr ""
+msgstr "타임랩스에 워터 마크 사용"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamOrientation.jinja2:4
 msgid "Flip webcam horizontally"
-msgstr ""
+msgstr "수평으로 뒤집기"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamOrientation.jinja2:9
 msgid "Flip webcam vertically"
-msgstr ""
+msgstr "수직으로 뒤집기"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamOrientation.jinja2:14
 msgid "Rotate webcam 90 degrees counter clockwise"
-msgstr ""
+msgstr "시계 반대 방향으로 90도 회전"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamSnapshotSslValidation.jinja2:4
 msgid "Validate SSL on snapshot URL (if applicable)"
@@ -5050,7 +5062,7 @@ msgstr ""
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamSnapshotTimeout.jinja2:2
 msgid "Snapshot timeout"
-msgstr ""
+msgstr "스냅샷 시간 제한"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamSnapshotUrl.jinja2:1
 msgid "URL to use for retrieving webcam snapshot images for timelapse creation"
@@ -5070,7 +5082,7 @@ msgstr ""
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamStreamRatio.jinja2:2
 msgid "Stream aspect ratio"
-msgstr ""
+msgstr "스트림 가로 세로 비율"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamStreamRatio.jinja2:5
 msgid ""
@@ -5084,11 +5096,11 @@ msgstr ""
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamStreamTimeout.jinja2:2
 msgid "Stream timeout"
-msgstr ""
+msgstr "스트 시간 제한"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamStreamUrl.jinja2:1
 msgid "URL to embed into the UI for live viewing of the webcam stream"
-msgstr ""
+msgstr "림"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamStreamUrl.jinja2:2
 msgid "Stream URL"
@@ -5368,7 +5380,7 @@ msgstr "모두 복사"
 msgid ""
 "For performance reasons only a limited amount of terminal functionality is "
 "enabled right now."
-msgstr ""
+msgstr "성능상의 이유로 현재 제한된 터미널 기능만 사용할 수 있습니다."
 
 #: src/octoprint/templates/tabs/terminal.jinja2:37
 msgid "Fake Acknowledgement"
