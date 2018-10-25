@@ -285,7 +285,7 @@ default_settings = {
 		"name": "",
 		"color": "default",
 		"colorTransparent": False,
-		"defaultLanguage": "_default",
+		"defaultLanguage": "ko",
 		"showFahrenheitAlso": False,
 		"components": {
 			"order": {
