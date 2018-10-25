@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: StellaRasPrint\n"
 "Report-Msgid-Bugs-To: i18n@octoprint.org\n"
 "POT-Creation-Date: 2018-07-25 13:37+0200\n"
-"PO-Revision-Date: 2018-10-24 15:55+0900\n"
+"PO-Revision-Date: 2018-10-25 14:35+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,8 +27,8 @@ msgid ""
 "Without this plugin your printer will no longer be able to triggerconfirmation "
 "or selection prompts in OctoPrint"
 msgstr ""
-"이 플러그인이 없으면 프린터는 더 이상 OctoPrint에서 확인 또는 선택 프롬프트를 트"
-"리거 할 수 없습니다"
+"이 플러그인이 없으면 프린터는 더 이상 확인 또는 선택 프롬프트를 트리거 할 수 없"
+"습니다"
 
 #: src/octoprint/plugins/action_command_prompt/static/js/action_command_prompt.js:50
 msgid "Message from your printer"
@@ -48,9 +48,9 @@ msgid ""
 "OctoPrint will replace <code>{choice}</code> with the index of the selected "
 "choice. E.g. <code>M876 S{choice}</code> will become <code>M123 S1</code>"
 msgstr ""
-"이 옵션을 사용하여 장비에 선택 항목을 알려주는 명령을 정의합니다. OctoPrint는 선"
-"택 항목의 인덱스로 <code>{choice}</code>를 대체 합니다. 예를 들어 <code>M876 "
-"S{choice}</code>는 <code>M123 S1</code>이 될 것입니다"
+"이 옵션을 사용하여 장비에 선택 항목을 알려주는 명령을 정의합니다. 선택 항목의 인"
+"덱스로 <code>{choice}</code>를 대체합니다. 예를 들어 <code>M876 S{choice}</code>"
+"는 <code>M123 S1</code>이 될 것입니다"
 
 #: src/octoprint/plugins/announcements/__init__.py:129
 #: src/octoprint/plugins/announcements/templates/announcements.jinja2:4
@@ -63,8 +63,8 @@ msgid ""
 "Without this plugin you might miss important announcements regarding security "
 "or other critical issues concerning OctoPrint."
 msgstr ""
-"이 플러그인이 없으면 보안 또는 OctoPrint와 관련된 기타 중요한 문제와 관련하여 중"
-"요한 공지 사항을 놓칠 수 있습니다."
+"이 플러그인이 없으면 보안 또는 서버와 관련된 기타 중요한 문제와 관련하여 중요한 "
+"공지 사항을 놓칠 수 있습니다."
 
 #: src/octoprint/plugins/announcements/static/js/announcements.js:50
 msgid "Cannot be toggled"
@@ -147,8 +147,8 @@ msgid ""
 "Without this plugin OctoPrint will no longer be able to perform setup steps "
 "that might be required after an update."
 msgstr ""
-"이 플러그인이 없으면 OctoPrint는 더 이상 업데이트 후에 필요할 수 있는 설정 단계"
-"를 수행할 수 없습니다."
+"이 플러그인이 없으면 서버는 더 이상 업데이트 후에 필요할 수 있는 설정 단계를 수"
+"행할 수 없습니다."
 
 #: src/octoprint/plugins/corewizard/subwizards.py:30
 #: src/octoprint/plugins/corewizard/templates/corewizard_servercommands_wizard.jinja2:1
@@ -184,9 +184,9 @@ msgid ""
 "is accessible from the internet, your printer <strong>will be accessible by "
 "everyone - that also includes the bad guys!</strong>"
 msgstr ""
-"당신은 접속 제어를 사용하지 않도록 <strong>설정하고</strong> OctoPrint 설치가 인"
-"터넷에서 액세스할 수 있는 경우, 장비는 <strong>모든 사람에 의해 액세스할 수 있습"
-"니다!</strong>"
+"당신은 접속 제어를 사용하지 않도록 <strong>설정하고</strong> 서버 설치가 인터넷"
+"에서 액세스할 수 있는 경우, 장비는 <strong>모든 사람에 의해 액세스할 수 있습니"
+"다!</strong>"
 
 #: src/octoprint/plugins/corewizard/static/js/corewizard.js:83
 msgid "Please set up Access Control"
@@ -360,8 +360,8 @@ msgid ""
 "the like might take longer.\n"
 msgstr ""
 "\n"
-"    사용 하지 않도록 설정 된 경우 OctoPrint는 항상 인터넷에 대한 작업 연결을 갖"
-"고 있다고 가정합니다.\n"
+"    사용 하지 않도록 설정된 경우 서버는 항상 인터넷에 대한 작업 연결을 갖고 있다"
+"고 가정합니다.\n"
 "    만약 실제로 그런 경우가 아니라면, 서버 시작, 업데이트 확인 등이 더 오래 걸"
 "릴 수 있습니다.\n"
 
@@ -478,7 +478,7 @@ msgstr ""
 "\n"
 "    다음 서버 시작부터 블랙리스트 가져오기 및 사용을 허용할지 여부를 결정하십시"
 "오. 서버내에서\n"
-"     설정> 서버 오른쪽에서 언제든지 결정을 변경할 수 있습니다.\n"
+"    설정> 서버 오른쪽에서 언제든지 결정을 변경할 수 있습니다.\n"
 
 #: src/octoprint/plugins/corewizard/templates/corewizard_pluginblacklist_wizard.jinja2:20
 msgid "Disable Plugin Blacklist Processing"
@@ -558,9 +558,9 @@ msgid ""
 "</p>"
 msgstr ""
 "<p>\n"
-"    외부 명령을 호출하여 서버를 다시 시작하거나 실행중인 시스템을 다시 시작하거"
-"나 종료 할 수 있습니다.\n"
-"    여기에서 구성 할 수 있습니다.\n"
+"    외부 명령을 호출하여 서버를 다시 시작하거나 실행 중인 시스템을 다시 시작하거"
+"나 종료할 수 있습니다.\n"
+"    여기에서 구성할 수 있습니다.\n"
 "</p>"
 
 #: src/octoprint/plugins/corewizard/templates/corewizard_servercommands_wizard.jinja2:8
@@ -852,16 +852,16 @@ msgid ""
 "Without this plugin your OctoPrint instance will no longer be discoverable on "
 "the network via Bonjour and uPnP."
 msgstr ""
-"이 플러그인을 사용하지 않으면 Bonjour 및 uPnP를 통해 OctoPrint 인스턴스를 네트워"
-"크에서 더 이상 검색 할 수 없습니다."
+"이 플러그인을 사용하지 않으면 Bonjour 및 uPnP를 통해 서버 인스턴스를 네트워크에"
+"서 더 이상 검색할 수 없습니다."
 
 #: src/octoprint/plugins/logging/__init__.py:204
 msgid ""
 "Without this plugin you will no longer be able to retrieve OctoPrint's logs or "
 "modify the current logging levels through the web interface."
 msgstr ""
-"이 플러그인이 없으면 웹인터페이스를 통해 더이상 OctoPrint의 로그를 검색하거나 현"
-"재 로깅 수준을 수정할 수 없습니다."
+"이 플러그인이 없으면 웹인터페이스를 통해 더이상 서버의 로그를 검색하거나 현재 로"
+"깅 수준을 수정할 수 없습니다."
 
 #: src/octoprint/plugins/logging/__init__.py:201
 msgid "Logging"
@@ -931,8 +931,8 @@ msgid ""
 "information about your OctoPi instance,which will make it more tricky to help "
 "you if you need support."
 msgstr ""
-"이 플러그인이 없으면 OctoPrint는 OctoPi 인스턴스에 대한 추가 정보를 더 이상 제공"
-"할 수 없으므로 지원이 필요할 경우 도움을 주기가 까다로울 것입니다."
+"이 플러그인이 없으면 서버 인스턴스에 대한 추가 정보를 더 이상 제공할 수 없으므"
+"로 지원이 필요할 경우 도움을 주기가 까다로울 것입니다."
 
 #: src/octoprint/plugins/octopi_support/static/js/octopi_support.js:32
 msgid "running on"
@@ -1122,8 +1122,8 @@ msgid ""
 "Trying to restart the server produced an error, please check octoprint.log for "
 "details. You'll have to restart manually."
 msgstr ""
-"서버를 다시 시작하려고하면 오류가 발생합니다. 자세한 내용은 octoprint.log를 확인"
-"하십시오. 수동으로 다시 시작해야합니다."
+"서버를 다시 시작하려고 하면 오류가 발생합니다. 자세한 내용은 octoprint.log를 확"
+"인하십시오. 수동으로 다시 시작해야 합니다."
 
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:809
 msgid "A refresh is needed for the changes to take effect."
@@ -1356,7 +1356,7 @@ msgstr "현재 저장소를 사용할 수 없습니다"
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:186
 msgid "Is your OctoPrint installation connected to the internet?"
-msgstr "OctoPrint 설치가 인터넷에 연결되어 있습니까?"
+msgstr "서버 설치가 인터넷에 연결되어 있습니까?"
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:191
 msgid "... from URL"
@@ -1499,8 +1499,8 @@ msgid ""
 "Without this plugin OctoPrint will no longer be able to check if the printer it "
 "is connected to has a known safetyissue and inform you about that fact."
 msgstr ""
-"이 플러그인이 없으면 OctoPrint는 연결된 장비에 알려진 안전 이슈가 있는지 확인하"
-"고 해당 사실에 대해 알려 줄 수 없습니다."
+"이 플러그인이 없으면 연결된 장비에 알려진 안전 이슈가 있는지 확인하고 해당 사실"
+"에 대해 알려줄 수 없습니다."
 
 #: src/octoprint/plugins/printer_safety_check/templates/printer_safety_check_sidebar.jinja2:1
 msgid "Warning!"
@@ -1649,8 +1649,8 @@ msgid ""
 "The update could not be started. Is it already active? Please consult octoprint."
 "log for details."
 msgstr ""
-"업데이트를 시작할 수 없습니다. 이미 활성화되어 있습니까? 자세한 내용은 로를 참조"
-"하십시오."
+"업데이트를 시작할 수 없습니다. 이미 활성화되어 있습니까? 자세한 내용은 로그를 참"
+"조하십시오."
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:553
 msgid "Can't update while printing"
@@ -1683,8 +1683,8 @@ msgid ""
 "Depending on your printer's controller and general setup, restarting OctoPrint "
 "may cause your printer to be reset."
 msgstr ""
-"장비의 컨트롤러와 일반설정에 따라 OctoPrint를 다시 시작하면 장비가 리셋될수 있습"
-"니다."
+"장비의 컨트롤러와 일반 설정에 따라 서버를 다시 시작하면 장비가 리셋될 수 있습니"
+"다."
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:573
 #: src/octoprint/static/js/app/helpers.js:703
@@ -1724,11 +1724,11 @@ msgid ""
 "Please consult octoprint.log on what went wrong."
 msgstr ""
 "서버는 외관상으로는 그 자체로 다시 시작하지 않았습니다, 당신은 그것을 수동으로 "
-"해야 할 것입니다. 무엇이 잘못되었는지 octoprint에게 문의하십시오."
+"해야할 것입니다. 무엇이 잘못되었는지 문의하십시오."
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:771
 msgid "The update finished successfully, please restart OctoPrint now."
-msgstr "업데이트를 성공적으로 완료, 지금 OctoPrint를 다시 시작하십시오."
+msgstr "업데이트를 성공적으로 완료, 지금 서버를 다시 시작하십시오."
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:773
 msgid "The update finished successfully, please reboot the server now."
@@ -1743,16 +1743,16 @@ msgid ""
 "Restarting OctoPrint failed, please restart it manually. You might also want to "
 "consult octoprint.log on what went wrong here."
 msgstr ""
-"OctoPrint를 다시 시작하지 못했습니다. 당신은 또한 무엇이 잘못되었는지 octoprint"
-"에 대한 상담을 할 수 있습니다."
+"서버를 다시 시작하지 못했습니다. 당신은 또한 무엇이 잘못되었는지 상담을 할 수 있"
+"습니다."
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:794
 msgid ""
 "Rebooting the server failed, please reboot it manually. You might also want to "
 "consult octoprint.log on what went wrong here."
 msgstr ""
-"서버를 재부팅하지 못했습니다, 수동으로 재부팅 하십시오. 당신은 또한 무엇이 잘못"
-"되었는지 octoprint에 대한 상담을 할 수 있습니다."
+"서버를 재부팅하지 못했습니다, 수동으로 재부팅하십시오. 당신은 또한 무엇이 잘못되"
+"었는지 상담을 할 수 있습니다."
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:813
 msgid "Update successful!"
@@ -1771,6 +1771,8 @@ msgid ""
 "The update did not finish successfully. Please consult <code>octoprint.log</"
 "code> and <code>plugin_softwareupdate_console.log</code> for details."
 msgstr ""
+"업데이트가 성공적으로 완료되지 않았습니다. 자세한 내용은 <code>octoprint.log</"
+"code> 및 <code>plugin_softwareupdate_console.log</code>를 참조하십시오."
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:1
 msgid ""
@@ -1809,7 +1811,7 @@ msgstr "현재 버전"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:29
 msgid "Update available"
-msgstr ""
+msgstr "업데이트 사용 가능"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:32
 msgid "Update"
@@ -1817,15 +1819,15 @@ msgstr "업데이트"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:35
 msgid "Installed:"
-msgstr ""
+msgstr "설치:"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:36
 msgid "Available:"
-msgstr ""
+msgstr "사용가능:"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:37
 msgid "Release Notes:"
-msgstr ""
+msgstr "릴리즈노트:"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:62
 msgid "Update all"
@@ -2079,7 +2081,7 @@ msgstr ""
 
 #: src/octoprint/server/api/system.py:181
 msgid "Restart OctoPrint in safe mode"
-msgstr "OctoPrint를 안전 모드로 재시작"
+msgstr "서버를 안전 모드로 재시작"
 
 #: src/octoprint/server/api/system.py:182
 msgid ""
@@ -2414,11 +2416,11 @@ msgstr "사용 가능한 여유 디스크 공간이 매우 낮습니다."
 
 #: src/octoprint/static/js/app/viewmodels/files.js:51
 msgid "Your available free disk space is starting to run low."
-msgstr ""
+msgstr "사용 가능한 여유 디스크 공간이 부족하기 시작합니다."
 
 #: src/octoprint/static/js/app/viewmodels/files.js:53
 msgid "Your current disk usage."
-msgstr ""
+msgstr "현재 디스크 사용량."
 
 #: src/octoprint/static/js/app/viewmodels/files.js:415
 #, python-format
@@ -5465,10 +5467,12 @@ msgid ""
 "Check this to make your selected timelapse mode and options persist across "
 "restarts."
 msgstr ""
+"선택한 시간 경과 모드를 설정하고 옵션을 다시 시작할 때마다 유지하려면 이 옵션을 "
+"선택하십시오."
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:85
 msgid "You have unsaved changes. Don't forget to save them."
-msgstr ""
+msgstr "변경 사항을 저장하지 않았습니다. 저장하는 것을 잊지 마십시오."
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:86
 msgid "Save changes"
