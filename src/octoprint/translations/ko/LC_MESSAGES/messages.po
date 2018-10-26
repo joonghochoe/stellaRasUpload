@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: StellaRasPrint\n"
 "Report-Msgid-Bugs-To: i18n@octoprint.org\n"
 "POT-Creation-Date: 2018-07-25 13:37+0200\n"
-"PO-Revision-Date: 2018-10-26 12:30+0900\n"
+"PO-Revision-Date: 2018-10-26 21:46+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Last-Translator: Joongho Choe <joongho.choe@gmail.com>\n"
 "Language-Team: joongho.choe@gmail.com\n"
 "Language: ko\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: src/octoprint/plugins/action_command_prompt/__init__.py:93
 msgid "Action Command Prompt"
@@ -682,6 +682,11 @@ msgid ""
 "    CuraEngine version 15.06 or newer is <strong>not</strong>\n"
 "    compatible with this plugin.\n"
 msgstr ""
+"\n"
+"    CuraEngine의 경로를 지정하십시오.\n"
+"    <strong>15.04 이하 버전</strong>만 지원됩니다.\n"
+"    CuraEngine 15.06 이상 버전은 이 플러그인과 호환이\n"
+"    <strong>안됩니다</strong>.\n"
 
 #: src/octoprint/plugins/cura/templates/cura_settings.jinja2:15
 msgid "Profiles"
@@ -698,10 +703,12 @@ msgid ""
 "For more information on configuration and usage please <a href="
 "\"%(plugin_cura_homepage)s\" target=\"_blank\">see the Plugin's homepage</a>."
 msgstr ""
+"구성 및 사용에 대한 자세한 내용을 보려면 <a href=\"%(plugin_cura_homepage)s\" "
+"target=\"_blank\">플러그인 홈페이지를 참조하십시오</a>."
 
 #: src/octoprint/plugins/cura/templates/cura_wizard.jinja2:2
 msgid "Configure CuraEngine"
-msgstr ""
+msgstr "CuraEngine 구성"
 
 #: src/octoprint/plugins/cura/templates/cura_wizard.jinja2:3
 msgid ""
@@ -711,10 +718,14 @@ msgid ""
 "        CuraEngine for slicing it needs to be specified.\n"
 "    "
 msgstr ""
+"\n"
+"        CuraEngine에 대한 경로가 아직 설정되지 않았습니다, 슬라이스를 위해\n"
+"        CuraEngine을 사용하려면 경로를 지정해야합니다.\n"
+"    "
 
 #: src/octoprint/plugins/cura/templates/cura_wizard.jinja2:16
 msgid "Set up a slicing profile"
-msgstr ""
+msgstr "슬라이스 프로파일 설정"
 
 #: src/octoprint/plugins/cura/templates/cura_wizard.jinja2:17
 msgid ""
@@ -723,6 +734,10 @@ msgid ""
 "now.\n"
 "    Otherwise just skip this step."
 msgstr ""
+"아직 CuraEngine을 사용하여 슬라이스하는데 사용할 슬라이스 프로파일을\n"
+"    가져오지 않았습니다. 서버와 분리할 계획이라면 지금 이 작업을 수행해야 합니"
+"다.\n"
+"    그렇지 않으면 이 단계를 건너뛰십시오."
 
 #: src/octoprint/plugins/cura/templates/cura_wizard.jinja2:28
 msgid ""
@@ -738,14 +753,23 @@ msgid ""
 "            via the \"Import Profile\" button.\n"
 "        "
 msgstr ""
+"\n"
+"           <strong>프로파일을 가져올 위치를 모르십니까?</strong> Cura에서\n"
+"           버전 15.04.06까지의 슬라이싱 프로파일을 내보내려면, 프로파일을 열"
+"고 \n"
+"           프로파일을 설정한 다음 \"파일\"을 클릭하십시오. \"프로파일 저장\"을 "
+"클릭하십시오.\n"
+"           \"가져 오기 프로파일\" 버튼을 통해 생성한 <code>.ini</code> 파일을 가"
+"져올 수 있습니다.\n"
+"        "
 
 #: src/octoprint/plugins/cura/templates/snippets/settings/cura/engineLog.jinja2:4
 msgid "Log the output of CuraEngine to plugin_cura_engine.log"
-msgstr ""
+msgstr "CuraEngine의 출력을 plugin_cura_engine.log에 기록합니다."
 
 #: src/octoprint/plugins/cura/templates/snippets/settings/cura/enginePath.jinja2:2
 msgid "Path to CuraEngine"
-msgstr ""
+msgstr "CuraEngine 경로"
 
 #: src/octoprint/plugins/cura/templates/snippets/settings/cura/enginePath.jinja2:6
 #: src/octoprint/templates/dialogs/settings/folders.jinja2:9
@@ -762,7 +786,7 @@ msgstr "검사"
 
 #: src/octoprint/plugins/cura/templates/snippets/settings/cura/profileImporter.jinja2:4
 msgid "Import Existing Cura Profile"
-msgstr ""
+msgstr "기존 Cura 프로파일 가져오기"
 
 #: src/octoprint/plugins/cura/templates/snippets/settings/cura/profileImporter.jinja2:9
 msgid "Profile ini file"
@@ -1061,32 +1085,32 @@ msgstr "플러그인 관리 로그"
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:728
 #, python-format
 msgid "%(count)d earlier actions..."
-msgstr ""
+msgstr "%(count)d 이전 작업..."
 
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:730
 #, python-format
 msgid "%(count)d earlier action"
-msgstr ""
+msgstr "%(count)d 이전 작업"
 
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:741
 #, python-format
 msgid "Install <em>%(plugin)s</em>: %(result)s"
-msgstr ""
+msgstr "<em>%(plugin)s</em> 설치: %(result)s"
 
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:745
 #, python-format
 msgid "Uninstall <em>%(plugin)s</em>: %(result)s"
-msgstr ""
+msgstr "<em>%(plugin)s</em> 제거: %(result)s"
 
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:749
 #, python-format
 msgid "Enable <em>%(plugin)s</em>: %(result)s"
-msgstr ""
+msgstr "<em>%(plugin)s</em> 사용: %(result)s"
 
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:753
 #, python-format
 msgid "Disable <em>%(plugin)s</em>: %(result)s"
-msgstr ""
+msgstr "<em>%(plugin)s</em> 사용중지: %(result)s"
 
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:770
 msgid "A restart is needed for the changes to take effect."
@@ -1225,6 +1249,11 @@ msgid ""
 "of plugin\n"
 "    packages is possible while <code>pip</code> is unavailable.\n"
 msgstr ""
+"\n"
+"    설치시 <code>pip</code> 명령을 찾을 수 없거나 제대로 작동하지 않습니다.\n"
+"    자세한 내용은 로그 파일을 참조하고 필요한 경우 수동으로 구성하십시오.\n"
+"    <code>pip</code>를 사용할 수 없으면 플러그인 패키지를 설치하거나\n"
+"    제거할 수 없습니다.\n"
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:17
 msgid ""
@@ -1319,7 +1348,7 @@ msgstr "새 플러그인 설치..."
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:136
 #, python-format
 msgid "... from the <a href=\"%(url)s\" target=\"_blank\">Plugin Repository</a>"
-msgstr ""
+msgstr "...<a href=\"%(url)s\" target=\"_blank\">플러그인 저장소</a>"
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:142
 msgid "Sort by title"
@@ -1376,6 +1405,8 @@ msgid ""
 "This does not look like a valid URL. Expected http, https or any of the <a href="
 "\"%(url)s\" target=\"_blank\">supported VCS URLs</a>."
 msgstr ""
+"이것은 유효한 URL처럼 보이지 않습니다. http, https 또는 모든 <a href=\"%(url)s"
+"\" target=\"_blank\">지원 되는 VCS URL</a>."
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:203
 msgid "... from an uploaded archive"
@@ -1387,6 +1418,9 @@ msgid ""
 "either zip files or tarballs and have the extension \".zip\", \".tar.gz\", \"."
 "tgz\" or \".tar\""
 msgstr ""
+"이것은 유효한 플러그인 보관소처럼 보이지 않습니다. 올바른 플러그인 보관소는 zip "
+"파일 또는 tarball이어야하며 확장자는 \".zip\", \".tar.gz\", \".tgz\" 또는 \".tar"
+"\"이어야 합니다"
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:220
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:66
@@ -1403,7 +1437,7 @@ msgstr "고급 옵션"
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:226
 msgid "Use <code>--process-dependency-links</code> with <code>pip install</code>"
-msgstr ""
+msgstr "<code>pip install</code>에 <code>--process-dependency-links</code> 사용"
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:246
 msgid ""
@@ -1582,6 +1616,7 @@ msgid ""
 "Those components marked with <i class=\"fa fa-check\"></i> can be updated "
 "directly."
 msgstr ""
+"<i class=\"fa fa-check\"></i>로 표시된 구성 요소는 직접 업데이트할 수 있습니다."
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:328
 msgid ""
@@ -1677,6 +1712,8 @@ msgid ""
 "OctoPrint since they might contain important information you need to know "
 "<strong>before</strong> upgrading."
 msgstr ""
+"</strong>업그레이드하기 전에<strong> 알아야 할 중요한 정보가 있을 수 있으므로 링"
+"크된 릴리스노트를 읽으십시오."
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:571
 msgid "This action may disrupt any ongoing print jobs."
