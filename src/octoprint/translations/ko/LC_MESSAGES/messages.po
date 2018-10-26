@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: StellaRasPrint\n"
 "Report-Msgid-Bugs-To: i18n@octoprint.org\n"
 "POT-Creation-Date: 2018-07-25 13:37+0200\n"
-"PO-Revision-Date: 2018-10-26 11:00+0900\n"
+"PO-Revision-Date: 2018-10-26 11:18+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -4596,11 +4596,11 @@ msgstr "혼합"
 
 #: src/octoprint/templates/sidebar/files_header.jinja2:18
 msgid "Only show machine code files"
-msgstr "기계 코드 파일만 표시"
+msgstr "G 코드 파일만 표시"
 
 #: src/octoprint/templates/sidebar/files_header.jinja2:19
 msgid "Only show model files"
-msgstr "모델 파일만 표시"
+msgstr "3D 모델 파일만 표시"
 
 #: src/octoprint/templates/sidebar/files_header.jinja2:22
 msgid "Only show files stored locally"
