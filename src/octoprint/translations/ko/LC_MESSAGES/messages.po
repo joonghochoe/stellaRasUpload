@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: StellaRasPrint\n"
 "Report-Msgid-Bugs-To: i18n@octoprint.org\n"
 "POT-Creation-Date: 2018-07-25 13:37+0200\n"
-"PO-Revision-Date: 2018-10-26 11:18+0900\n"
+"PO-Revision-Date: 2018-10-26 12:30+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1823,7 +1823,7 @@ msgstr "업데이트"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:35
 msgid "Installed:"
-msgstr "설치:"
+msgstr "설치된:"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:36
 msgid "Available:"
@@ -4452,6 +4452,22 @@ msgstr "로그아웃"
 #: src/octoprint/templates/navbar/settings.jinja2:1
 msgid "Settings"
 msgstr "설정"
+
+#: src/octoprint/templates/navbar/settings.jinja2:1
+msgid "OctoPrint Settings"
+msgstr "설정"
+
+#: src/octoprint/templates/navbar/settings.jinja2:1
+msgid "Settings update detected"
+msgstr "설정 업데이트가 감지되었습니다"
+
+#: src/octoprint/templates/navbar/settings.jinja2:1
+msgid "Reload all"
+msgstr "모두 재로드"
+
+#: src/octoprint/templates/navbar/settings.jinja2:1
+msgid "Reload only non-conflicting changes"
+msgstr "충돌하지 않는 변경사항만 재로드"
 
 #: src/octoprint/templates/navbar/systemmenu.jinja2:1
 msgid "System"
