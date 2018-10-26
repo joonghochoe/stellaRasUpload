@@ -31,22 +31,23 @@ class ServerCommandsSubwizard(object):
 
 
 # noinspection PyUnresolvedReferences,PyMethodMayBeStatic
-class WebcamSubwizard(object):
-	def _is_webcam_wizard_firstrunonly(self):
-		return True
-
-	def _is_webcam_wizard_required(self):
-		webcam_snapshot_url = self._settings.global_get(["webcam", "snapshot"])
-		webcam_stream_url = self._settings.global_get(["webcam", "stream"])
-		ffmpeg_path = self._settings.global_get(["webcam", "ffmpeg"])
-
-		return not (webcam_snapshot_url and webcam_stream_url and ffmpeg_path)
-
-	def _get_webcam_wizard_details(self):
-		return dict(required=self._is_webcam_wizard_required())
-
-	def _get_webcam_wizard_name(self):
-		return gettext("Webcam & Timelapse")
+# STELLAMOVE
+# class WebcamSubwizard(object):
+# 	def _is_webcam_wizard_firstrunonly(self):
+# 		return True
+#
+# 	def _is_webcam_wizard_required(self):
+# 		webcam_snapshot_url = self._settings.global_get(["webcam", "snapshot"])
+# 		webcam_stream_url = self._settings.global_get(["webcam", "stream"])
+# 		ffmpeg_path = self._settings.global_get(["webcam", "ffmpeg"])
+#
+# 		return not (webcam_snapshot_url and webcam_stream_url and ffmpeg_path)
+#
+# 	def _get_webcam_wizard_details(self):
+# 		return dict(required=self._is_webcam_wizard_required())
+#
+# 	def _get_webcam_wizard_name(self):
+# 		return gettext("Webcam & Timelapse")
 
 
 # noinspection PyUnresolvedReferences,PyMethodMayBeStatic
@@ -134,18 +135,19 @@ class PluginBlacklistSubwizard(object):
 
 
 # noinspection PyUnresolvedReferences,PyMethodMayBeStatic
-class PrinterProfileSubwizard(object):
-	def _is_printerprofile_wizard_firstrunonly(self):
-		return True
-
-	def _is_printerprofile_wizard_required(self):
-		return self._printer_profile_manager.is_default_unmodified() and self._printer_profile_manager.profile_count == 1
-
-	def _get_printerprofile_wizard_details(self):
-		return dict(required=self._is_printerprofile_wizard_required())
-
-	def _get_printerprofile_wizard_name(self):
-		return gettext("Default Printer Profile")
+# STELLAMOVE
+# class PrinterProfileSubwizard(object):
+# 	def _is_printerprofile_wizard_firstrunonly(self):
+# 		return True
+#
+# 	def _is_printerprofile_wizard_required(self):
+# 		return self._printer_profile_manager.is_default_unmodified() and self._printer_profile_manager.profile_count == 1
+#
+# 	def _get_printerprofile_wizard_details(self):
+# 		return dict(required=self._is_printerprofile_wizard_required())
+#
+# 	def _get_printerprofile_wizard_name(self):
+# 		return gettext("Default Printer Profile")
 
 
 Subwizards = type("Subwizwards",

@@ -99,25 +99,26 @@ $(function() {
         };
     }
 
-    function CoreWizardWebcamViewModel(parameters) {
-        var self = this;
-
-        self.settingsViewModel = parameters[0];
-
-        self.required = false;
-
-        self.onWizardDetails = function(response) {
-            self.required = response && response.corewizard && response.corewizard.details && response.corewizard.details.webcam && response.corewizard.details.webcam.required;
-        };
-
-        self.onWizardFinish = function() {
-            if (!self.required) return;
-            if (self.settingsViewModel.webcam_streamUrl()
-                || (self.settingsViewModel.webcam_snapshotUrl() && self.settingsViewModel.webcam_ffmpegPath())) {
-                return "reload";
-            }
-        }
-    }
+// STELLAMOVE
+//    function CoreWizardWebcamViewModel(parameters) {
+//        var self = this;
+//
+//        self.settingsViewModel = parameters[0];
+//
+//        self.required = false;
+//
+//        self.onWizardDetails = function(response) {
+//            self.required = response && response.corewizard && response.corewizard.details && response.corewizard.details.webcam && response.corewizard.details.webcam.required;
+//        };
+//
+//        self.onWizardFinish = function() {
+//            if (!self.required) return;
+//            if (self.settingsViewModel.webcam_streamUrl()
+//                || (self.settingsViewModel.webcam_snapshotUrl() && self.settingsViewModel.webcam_ffmpegPath())) {
+//                return "reload";
+//            }
+//        }
+//    }
 
     function CoreWizardServerCommandsViewModel(parameters) {
         var self = this;
@@ -286,49 +287,50 @@ $(function() {
 
     }
 
-    function CoreWizardPrinterProfileViewModel(parameters) {
-        var self = this;
-
-        self.printerProfiles = parameters[0];
-
-        self.required = false;
-
-        self.editor = self.printerProfiles.createProfileEditor();
-        self.editorLoaded = ko.observable(false);
-
-        self.onWizardDetails = function(response) {
-            self.required = response && response.corewizard && response.corewizard.details && response.corewizard.details.printerprofile && response.corewizard.details.printerprofile.required;
-            if (!self.required) return;
-
-            OctoPrint.printerprofiles.get("_default")
-                .done(function(data) {
-                    self.editor.fromProfileData(data);
-                    self.editorLoaded(true);
-                })
-                .fail(function() {
-                    self.editor.fromProfileData();
-                    self.editorLoaded(true);
-                });
-        };
-
-        self.onWizardFinish = function() {
-            if (!self.required) return;
-
-            OctoPrint.printerprofiles.update("_default", self.editor.toProfileData())
-                .done(function() {
-                    self.printerProfiles.requestData();
-                });
-        };
-    }
+// STELLAMOVE
+//    function CoreWizardPrinterProfileViewModel(parameters) {
+//        var self = this;
+//
+//        self.printerProfiles = parameters[0];
+//
+//        self.required = false;
+//
+//        self.editor = self.printerProfiles.createProfileEditor();
+//        self.editorLoaded = ko.observable(false);
+//
+//        self.onWizardDetails = function(response) {
+//            self.required = response && response.corewizard && response.corewizard.details && response.corewizard.details.printerprofile && response.corewizard.details.printerprofile.required;
+//            if (!self.required) return;
+//
+//            OctoPrint.printerprofiles.get("_default")
+//                .done(function(data) {
+//                    self.editor.fromProfileData(data);
+//                    self.editorLoaded(true);
+//                })
+//                .fail(function() {
+//                    self.editor.fromProfileData();
+//                    self.editorLoaded(true);
+//                });
+//        };
+//
+//        self.onWizardFinish = function() {
+//            if (!self.required) return;
+//
+//            OctoPrint.printerprofiles.update("_default", self.editor.toProfileData())
+//                .done(function() {
+//                    self.printerProfiles.requestData();
+//                });
+//        };
+//    }
 
     OCTOPRINT_VIEWMODELS.push({
         construct: CoreWizardAclViewModel,
         dependencies: ["loginStateViewModel"],
         elements: ["#wizard_plugin_corewizard_acl"]
-    }, {
-        construct: CoreWizardWebcamViewModel,
-        dependencies: ["settingsViewModel"],
-        elements: ["#wizard_plugin_corewizard_webcam"]
+//    }, {
+//        construct: CoreWizardWebcamViewModel,
+//        dependencies: ["settingsViewModel"],
+//        elements: ["#wizard_plugin_corewizard_webcam"]
     }, {
         construct: CoreWizardServerCommandsViewModel,
         dependencies: ["settingsViewModel"],
@@ -341,9 +343,9 @@ $(function() {
         construct: CoreWizardPluginBlacklistViewModel,
         dependencies: ["settingsViewModel"],
         elements: ["#wizard_plugin_corewizard_pluginblacklist"]
-    }, {
-        construct: CoreWizardPrinterProfileViewModel,
-        dependencies: ["printerProfilesViewModel"],
-        elements: ["#wizard_plugin_corewizard_printerprofile"]
+//    }, {
+//        construct: CoreWizardPrinterProfileViewModel,
+//        dependencies: ["printerProfilesViewModel"],
+//        elements: ["#wizard_plugin_corewizard_printerprofile"]
     });
 });
