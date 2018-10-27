@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: StellaRasPrint\n"
 "Report-Msgid-Bugs-To: i18n@octoprint.org\n"
 "POT-Creation-Date: 2018-07-25 13:37+0200\n"
-"PO-Revision-Date: 2018-10-26 21:46+0900\n"
+"PO-Revision-Date: 2018-10-27 20:42+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1563,6 +1563,10 @@ msgstr "소프트웨어 업데이트"
 #: src/octoprint/templates/dialogs/about/about.jinja2:1
 msgid "OctoPrint"
 msgstr "서버"
+
+#: src/octoprint/templates/index.jinja2:4
+msgid "Uploader"
+msgstr "파일업로더"
 
 #: src/octoprint/plugins/softwareupdate/__init__.py:1144
 msgid ""
