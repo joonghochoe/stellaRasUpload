@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: StellaRasPrint\n"
 "Report-Msgid-Bugs-To: i18n@octoprint.org\n"
 "POT-Creation-Date: 2018-07-25 13:37+0200\n"
-"PO-Revision-Date: 2018-10-27 20:42+0900\n"
+"PO-Revision-Date: 2018-10-28 17:18+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -830,6 +830,15 @@ msgid ""
 "Repetier create.\n"
 "        "
 msgstr ""
+"\n"
+"            <strong>Cura 15.04.x 또는 이전 버전</strong>에서 기존 프로파일 "
+"<code>.ini</code>을 가져올\n"
+"            수 있습니다. 그 이외의 것은 <strong>지원되지 않습니다</strong>. "
+"Cura 2.x의 <code>.curaprofile</code> 및\n"
+"            Cura 15.06.x의 <code>.json</code> 프로파일은 작동하지 않으며 타사 도"
+"구와 같은 사용자지정 Cura \n"
+"            프로파일도 작동하지 않습니다.\n"
+"        "
 
 #: src/octoprint/plugins/cura/templates/snippets/settings/cura/profileImporter.jinja2:61
 #: src/octoprint/templates/dialogs/settings/accesscontrol.jinja2:80
@@ -1410,7 +1419,7 @@ msgstr ""
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:203
 msgid "... from an uploaded archive"
-msgstr ""
+msgstr "업로드 된 보관소에서..."
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:216
 msgid ""
@@ -1444,6 +1453,8 @@ msgid ""
 "You should normally <strong>not</strong> have to change <strong>any</strong> of "
 "the following settings, they are purely provided for convenience here."
 msgstr ""
+"일반적으로 설정을 변경하지 <strong>않아도</strong> 됩니다. 여기서는 편의를 위해 "
+"제공됩니다."
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:249
 msgid "Plugin repository configuration"
@@ -1510,7 +1521,7 @@ msgstr "추가적인 인자"
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:300
 msgid ""
 "Force the use of the <code>--user</code> flag with <code>pip install</code>"
-msgstr ""
+msgstr "<code>--user</code> 플래그를 <code>pip install</code>과 사용하도록 강제"
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:309
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:104
@@ -1743,7 +1754,7 @@ msgstr "지금 업데이트 하시겠습니까?"
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:577
 #: src/octoprint/static/js/app/helpers.js:708
 msgid "Proceed"
-msgstr ""
+msgstr "진행"
 
 #: src/octoprint/plugins/softwareupdate/static/js/softwareupdate.js:711
 #, python-format
@@ -1829,6 +1840,11 @@ msgid ""
 "    to do this. Also refer to the <a href=\"https://github.com/foosel/OctoPrint/"
 "wiki/Plugin:-Software-Update\" target=\"_blank\">Documentation</a>.\n"
 msgstr ""
+"\n"
+"    <strong>체크 아웃 폴더</strong>를 정하십시오. 그렇지 않으면 이 플러그인은 업"
+"데이트\n"
+"    할 수 없습니다. 이렇게 하려면 <i class=\"fa fa-wrench\"></i> 버튼을 클릭하십"
+"시오.\n"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:6
 msgid ""
@@ -1849,6 +1865,15 @@ msgid ""
 "Update\" target=\"_blank\">Documentation</a>.\n"
 "    </p>\n"
 msgstr ""
+"\n"
+"    <p>\n"
+"        <strong>정식 릴리스 버전을 실행하지 않고 있지만 릴리스 버전을 추적하고 "
+"있습니다.</strong>\n"
+"    </p><p>\n"
+"        아마도 일치하는 개발 버전을 추적해야할 것입니다. 체크아웃 폴더가 다른 곳"
+"으로 변경된 경우에는\n"
+"        <strong>단순히 \"커밋\" 추적으로 전환</strong>하면 알아서 처리됩니다.\n"
+"    </p>\n"
 
 #: src/octoprint/plugins/softwareupdate/templates/softwareupdate_settings.jinja2:23
 msgid "Current versions"
@@ -2189,7 +2214,7 @@ msgstr ""
 #: src/octoprint/static/js/app/viewmodels/files.js:897
 #, python-format
 msgid "Slicing ... (%(percentage)d%%)"
-msgstr ""
+msgstr "슬라이싱 ... (%(percentage)d%%)"
 
 #: src/octoprint/static/js/app/dataupdater.js:236
 #: src/octoprint/static/js/app/dataupdater.js:247
@@ -2202,6 +2227,8 @@ msgid ""
 "Your printer's firmware reported an error. Due to that the ongoing print job "
 "will be cancelled. Reported error: %(firmwareError)s"
 msgstr ""
+"펌웨어에서 오류를 보고했습니다. 이로 인해 진행중인 작업이 취소됩니다. 보고된 오"
+"류: %(firmwareError)s"
 
 #: src/octoprint/static/js/app/dataupdater.js:248
 #, python-format
@@ -2209,6 +2236,8 @@ msgid ""
 "Your printer's firmware reported an error. Due to that OctoPrint will "
 "disconnect. Reported error: %(error)s"
 msgstr ""
+"펌웨어에서 오류를 보고했습니다. 이로 인해 연결을 끊습니다. 보고된 오류: "
+"%(error)s"
 
 #: src/octoprint/static/js/app/dataupdater.js:253
 msgid "Communication error"
@@ -2240,7 +2269,7 @@ msgstr "출력 시작 오류"
 #: src/octoprint/static/js/app/dataupdater.js:264
 #, python-format
 msgid "There was an error while trying to start a print job. Error: %(error)s"
-msgstr ""
+msgstr "작업을 시작하는 중에 오류가 발생했습니다. 오류: %(error)s"
 
 #: src/octoprint/static/js/app/dataupdater.js:273
 msgid "Unknown error"
@@ -2366,7 +2395,7 @@ msgstr ""
 #: src/octoprint/static/js/app/helpers.js:579
 #: src/octoprint/static/js/app/helpers.js:585
 msgid "off"
-msgstr ""
+msgstr "끄기"
 
 #: src/octoprint/static/js/app/helpers.js:700
 #: src/octoprint/static/js/app/viewmodels/connection.js:135
@@ -2443,6 +2472,10 @@ msgid ""
 "attached directly to the printer, any attempt to restart OctoPrint or reconnect "
 "to the printer could interrupt the print.<p>"
 msgstr ""
+"<p><strong>출력이 진행되는 동안 연결을 해제하려고합니다.</strong></p><p>출력이 "
+"진행되는 동안 연결을 끊으면 인쇄를 완료하지 못합니다. 장비에 직접 연결된 SD 카드"
+"에서 인쇄하는 경우 서버를 다시 시작하거나 장비에 다시 연결하면 인쇄가 중단될 수 "
+"있습니다.</p>"
 
 #: src/octoprint/static/js/app/viewmodels/connection.js:142
 msgid "Are you sure you want to disconnect from the printer?"
@@ -2483,6 +2516,8 @@ msgid ""
 "You are about to delete the folder \"%(folder)s\" which still contains files "
 "and/or sub folders."
 msgstr ""
+"여전히 파일 및 하위 폴더가 포함 되어 있는 \"%(folder)s\" 폴더를 삭제하려고 합니"
+"다."
 
 #: src/octoprint/static/js/app/viewmodels/files.js:613
 #: src/octoprint/static/js/app/viewmodels/gcode.js:530
@@ -2515,18 +2550,19 @@ msgid ""
 "Object in %(name)s exceeds the print volume of the currently selected printer "
 "profile, be careful when printing this."
 msgstr ""
+"%(name)s의 개체가 현재 선택된 장비 출력 크기를 초과하므로 인쇄시 주의하십시오."
 
 #: src/octoprint/static/js/app/viewmodels/files.js:703
 msgid "Object exceeds print volume in width.<br>"
-msgstr ""
+msgstr "출력물의 폭이 볼륨을 초과합니다.<br>"
 
 #: src/octoprint/static/js/app/viewmodels/files.js:706
 msgid "Object exceeds print volume in depth.<br>"
-msgstr ""
+msgstr "출력물의 깊이가 볼륨을 초과합니다.<br>"
 
 #: src/octoprint/static/js/app/viewmodels/files.js:709
 msgid "Object exceeds print volume in height.<br>"
-msgstr ""
+msgstr "출력물의 높이가 볼륨을 초과합니다.<br>"
 
 #: src/octoprint/static/js/app/viewmodels/files.js:715
 msgid ""
@@ -2539,18 +2575,20 @@ msgid ""
 "Print volume: (%(profile.minX).2f, %(profile.minY).2f, %(profile.minZ).2f) "
 "&times; (%(profile.maxX).2f, %(profile.maxY).2f, %(profile.maxZ).2f)"
 msgstr ""
+"출력 볼륨: (%(profile.minX).2f, %(profile.minY).2f, %(profile.minZ).2f) &times; "
+"(%(profile.maxX).2f, %(profile.maxY).2f, %(profile.maxZ).2f)"
 
 #: src/octoprint/static/js/app/viewmodels/files.js:724
 msgid "Object doesn't fit print volume"
-msgstr ""
+msgstr "출력이 장비 볼륨에 맞지 않습니다"
 
 #: src/octoprint/static/js/app/viewmodels/files.js:892
 msgid "Slicing ..."
-msgstr ""
+msgstr "슬라이싱..."
 
 #: src/octoprint/static/js/app/viewmodels/files.js:918
 msgid "Slicing done"
-msgstr ""
+msgstr "슬라이스 완료"
 
 #: src/octoprint/static/js/app/viewmodels/files.js:919
 #, python-format
@@ -2564,7 +2602,7 @@ msgstr ""
 
 #: src/octoprint/static/js/app/viewmodels/files.js:935
 msgid "Slicing failed"
-msgstr ""
+msgstr "슬라이스 실패"
 
 #: src/octoprint/static/js/app/viewmodels/files.js:952
 msgid "Streaming ..."
@@ -2581,7 +2619,7 @@ msgstr ""
 
 #: src/octoprint/static/js/app/viewmodels/files.js:981
 msgid "Streaming failed"
-msgstr ""
+msgstr "스트리밍 실패"
 
 #: src/octoprint/static/js/app/viewmodels/files.js:982
 #, python-format
@@ -2623,7 +2661,7 @@ msgstr "총 예상 출력 시간"
 
 #: src/octoprint/static/js/app/viewmodels/gcode.js:532
 msgid "Estimated layer height"
-msgstr ""
+msgstr "층 높이 예상치"
 
 #: src/octoprint/static/js/app/viewmodels/gcode.js:532
 #: src/octoprint/templates/tabs/timelapse.jinja2:68
@@ -2632,7 +2670,7 @@ msgstr ""
 
 #: src/octoprint/static/js/app/viewmodels/gcode.js:533
 msgid "Layer count"
-msgstr ""
+msgstr "층 갯수"
 
 #: src/octoprint/static/js/app/viewmodels/gcode.js:533
 msgid "printed"
@@ -2941,15 +2979,18 @@ msgid ""
 "a content type header: <code>%(content_type)s</code>. Please double check that "
 "the URL is returning static images, not multipart data or videos."
 msgstr ""
+"스냅샷 URL을 읽을 수 있지만 이미지처럼 보이지 않습니다. 콘텐츠 유형 헤더로 사"
+"용 : <code>%(content_type)s</code>. URL이 멀티파트 데이터 또는 동영상이 아닌 정"
+"적 이미지를 반환하는지 다시 확인하십시오."
 
 #: src/octoprint/static/js/app/viewmodels/settings.js:384
 msgid ""
 "If you see your webcam snapshot picture below, the entered snapshot URL is ok."
-msgstr ""
+msgstr "아래의 웹캠 스냅샷 사진이 보이면 입력한 스냅샷 URL이 정상입니다."
 
 #: src/octoprint/static/js/app/viewmodels/settings.js:386
 msgid "Snapshot test"
-msgstr ""
+msgstr "스냅샷 테스트"
 
 #: src/octoprint/static/js/app/viewmodels/settings.js:446
 msgid "The server is not reachable"
@@ -3001,11 +3042,11 @@ msgstr ""
 
 #: src/octoprint/static/js/app/viewmodels/slicing.js:186
 msgid "Cannot slice on the same device while printing"
-msgstr ""
+msgstr "출력하는 동안 동일한 장치에서 슬라이스할 수 없습니다"
 
 #: src/octoprint/static/js/app/viewmodels/slicing.js:188
 msgid "Cannot slice, not all parameters specified"
-msgstr ""
+msgstr "모든 매개 변수가 지정되지 않아서 슬라이스할 수 없습니다"
 
 #: src/octoprint/static/js/app/viewmodels/slicing.js:191
 msgid "Start the slicing process"
@@ -3041,6 +3082,8 @@ msgid ""
 "Use the form below to specify a new offset to apply to all temperature commands "
 "sent from printed files for \"%(name)s\""
 msgstr ""
+"아래 양식을 사용하여 \"%(name)s\"에 대한 출력된 파일에서 보낸 모든 온도 명령에 "
+"적용할 새 옹셋을 지정하십시오"
 
 #: src/octoprint/static/js/app/viewmodels/temperature.js:75
 #: src/octoprint/static/js/app/viewmodels/temperature.js:133
@@ -3091,10 +3134,12 @@ msgid ""
 "Failed to remove timelapse %(name)s.</p><p>Please consult octoprint.log for "
 "details.</p>"
 msgstr ""
+"타임랩스 %(name)s를 삭제하지 못했습니다.</p><p>자세한 내용은 octoprint.log를 참"
+"조하십시오.</p>"
 
 #: src/octoprint/static/js/app/viewmodels/timelapse.js:243
 msgid "Could not remove timelapse"
-msgstr ""
+msgstr "타임랩스를 삭제할 수 없습니다"
 
 #: src/octoprint/static/js/app/viewmodels/timelapse.js:251
 #, python-format
@@ -3118,7 +3163,7 @@ msgstr ""
 
 #: src/octoprint/static/js/app/viewmodels/timelapse.js:308
 msgid "Deleting timelapse files"
-msgstr ""
+msgstr "타임랩스 삭제중"
 
 #: src/octoprint/static/js/app/viewmodels/timelapse.js:309
 #, python-format
@@ -3474,7 +3519,7 @@ msgstr "사용"
 #: src/octoprint/templates/dialogs/settings/api.jinja2:12
 #, python-format
 msgid "Allow <a href=\"%(url)s\">Cross Origin Resource Sharing (CORS)</a>"
-msgstr ""
+msgstr "<a href=\"%(url)s\">CORS (Cross Origin Resource Sharing)</a> 허용"
 
 #: src/octoprint/templates/dialogs/settings/api.jinja2:24
 msgid ""
@@ -3885,7 +3930,7 @@ msgstr "장비에서 온도 정보를 폴링하는 간격"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:63
 msgid "Temperature interval (polling)"
-msgstr ""
+msgstr "온도 간격 (폴링)"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:69
 msgid "When printing or idle"
@@ -3893,22 +3938,24 @@ msgstr "출력중이거나 대기중"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:76
 msgid "When idle and a target temperature is set"
-msgstr ""
+msgstr "대기 및 목표 온도 설정시"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:79
 msgid ""
 "Temperature report interval to request from autoreport capable firmwares. A "
 "value of 0 disables autoreporting by the firmware and forces polling."
 msgstr ""
+"자동 보고가 가능한 펌웨어로부터 요청할 온도 보고 간격. 값 0은 펌웨어에 의한 자"
+"동 보고를 비활성화하고 폴링을 실행합니다."
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:80
 msgid "Temperature interval (autoreport)"
-msgstr ""
+msgstr "온도 간격 (자동 보고)"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:86
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:106
 msgid "Autoreport interval to request from firmware"
-msgstr ""
+msgstr "펌웨어 자동 보고 간격"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:89
 msgid ""
@@ -3967,7 +4014,7 @@ msgstr ""
 msgid ""
 "Time after which a connection attempt to the printer will be considered as "
 "having failed"
-msgstr ""
+msgstr "장비에 대한 연결 시도가 실패한 것으로 간주되는 시간"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:130
 msgid "Connection timeout"
@@ -3978,6 +4025,7 @@ msgid ""
 "Time after which to consider an auto detection attempt to have failed if no "
 "successful connection is detected"
 msgstr ""
+"성공적인 연결이 감지되지 않으면 자동 검색 시도가 실패한 것으로 간주되는 시간"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:139
 msgid "Autodetection timeout"
@@ -5086,11 +5134,11 @@ msgstr "FFMPEG 경로"
 
 #: src/octoprint/templates/snippets/settings/webcam/ffmpegThreads.jinja2:1
 msgid "Number of FFMPEG encoding threads"
-msgstr ""
+msgstr "FFMPEG 인코딩 스레드 수"
 
 #: src/octoprint/templates/snippets/settings/webcam/ffmpegThreads.jinja2:2
 msgid "FFMPEG threads"
-msgstr ""
+msgstr "FFMPEG 스레드"
 
 #: src/octoprint/templates/snippets/settings/webcam/watermark.jinja2:4
 msgid "Enable OctoPrint watermark in timelapse movies"
@@ -5110,11 +5158,11 @@ msgstr "시계 반대 방향으로 90도 회전"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamSnapshotSslValidation.jinja2:4
 msgid "Validate SSL on snapshot URL (if applicable)"
-msgstr ""
+msgstr "스냅샷 URL에서 SSL 유효성 검사 (해당하는 경우)"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamSnapshotTimeout.jinja2:1
 msgid "Timeout for taking a snapshot"
-msgstr ""
+msgstr "스냅샷 촬영 제한 시간"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamSnapshotTimeout.jinja2:2
 msgid "Snapshot timeout"
@@ -5385,11 +5433,11 @@ msgstr ""
 
 #: src/octoprint/templates/tabs/temperature.jinja2:11
 msgid "Current actual temperature as reported by your printer"
-msgstr ""
+msgstr "장비에서 보고한 현재 실제 온도"
 
 #: src/octoprint/templates/tabs/temperature.jinja2:12
 msgid "Current target temperature as reported by your printer"
-msgstr ""
+msgstr "장비에서 보고한 현재 목표 온도"
 
 #: src/octoprint/templates/tabs/temperature.jinja2:13
 msgid "Offset to apply to temperature commands sent from files"
@@ -5471,7 +5519,7 @@ msgstr ""
 msgid ""
 "Take note that timelapse configuration is disabled while your printer is "
 "printing."
-msgstr ""
+msgstr "장비가 인쇄중일때 타임랩스 설정이 비활성화됩니다."
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:6
 msgid "Timelapse Configuration"
