@@ -209,6 +209,7 @@ class PrinterProfileManager(object):
 		name = "Default",
 		model = "Generic RepRap Printer",
 		color = "default",
+		# STELLAMOVE
 		volume=dict(
 			width = 330,
 			depth = 330,
@@ -218,6 +219,7 @@ class PrinterProfileManager(object):
 			custom_box = False
 		),
 		heatedBed = True,
+		# STELLAMOVE
 		extruder=dict(
 			count = 2,
 			offsets = [
