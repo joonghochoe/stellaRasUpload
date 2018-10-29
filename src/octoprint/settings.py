@@ -188,8 +188,9 @@ default_settings = {
 			"host": "8.8.8.8",
 			"port": 53
 		},
+		# STELLAMOVE
 		"pluginBlacklist": {
-			"enabled": None,
+			"enabled": False,
 			"url": "https://plugins.octoprint.org/blacklist.json",
 			"ttl": 15 * 60 # 15 min
 		},

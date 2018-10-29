@@ -117,21 +117,22 @@ class OnlineCheckSubwizard(object):
 
 
 # noinspection PyUnresolvedReferences,PyMethodMayBeStatic
-class PluginBlacklistSubwizard(object):
-	def _is_pluginblacklist_wizard_firstrunonly(self):
-		return False
-
-	def _is_pluginblacklist_wizard_required(self):
-		return self._settings.global_get(["server", "pluginBlacklist", "enabled"]) is None
-
-	def _get_pluginblacklist_wizard_details(self):
-		return dict(required=self._is_pluginblacklist_wizard_required())
-
-	def _get_pluginblacklist_wizard_name(self):
-		return gettext("Plugin blacklist")
-
-	def _get_pluginblacklist_additional_wizard_template_data(self):
-		return dict(mandatory=self._is_pluginblacklist_wizard_required())
+# STELLAMOVE
+# class PluginBlacklistSubwizard(object):
+# 	def _is_pluginblacklist_wizard_firstrunonly(self):
+# 		return False
+#
+# 	def _is_pluginblacklist_wizard_required(self):
+# 		return self._settings.global_get(["server", "pluginBlacklist", "enabled"]) is None
+#
+# 	def _get_pluginblacklist_wizard_details(self):
+# 		return dict(required=self._is_pluginblacklist_wizard_required())
+#
+# 	def _get_pluginblacklist_wizard_name(self):
+# 		return gettext("Plugin blacklist")
+#
+# 	def _get_pluginblacklist_additional_wizard_template_data(self):
+# 		return dict(mandatory=self._is_pluginblacklist_wizard_required())
 
 
 # noinspection PyUnresolvedReferences,PyMethodMayBeStatic
