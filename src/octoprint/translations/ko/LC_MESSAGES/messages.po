@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: StellaRasPrint\n"
 "Report-Msgid-Bugs-To: i18n@octoprint.org\n"
 "POT-Creation-Date: 2018-07-25 13:37+0200\n"
-"PO-Revision-Date: 2018-10-29 11:50+0900\n"
+"PO-Revision-Date: 2018-10-29 16:28+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1031,7 +1031,7 @@ msgstr "추천하지 않습니다"
 
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:492
 msgid "Do you still want to disable it?"
-msgstr "여전히 비활성화 하시겠습니까?"
+msgstr "비활성화 하시겠습니까?"
 
 #: src/octoprint/plugins/pluginmanager/static/js/pluginmanager.js:493
 msgid "Keep enabled"
@@ -2516,8 +2516,7 @@ msgid ""
 "You are about to delete the folder \"%(folder)s\" which still contains files "
 "and/or sub folders."
 msgstr ""
-"여전히 파일 및 하위 폴더가 포함 되어 있는 \"%(folder)s\" 폴더를 삭제하려고 합니"
-"다."
+"파일 및 하위 폴더가 포함되어 있는 \"%(folder)s\" 폴더를 삭제하려고 합니다."
 
 #: src/octoprint/static/js/app/viewmodels/files.js:613
 #: src/octoprint/static/js/app/viewmodels/gcode.js:530
@@ -2569,6 +2568,8 @@ msgid ""
 "Object's bounding box: (%(object.minX).2f, %(object.minY).2f, %(object."
 "minZ).2f) &times; (%(object.maxX).2f, %(object.maxY).2f, %(object.maxZ).2f)"
 msgstr ""
+"개체의 경계 상자: (%(object.minX).2f, %(object.minY).2f, %(object.minZ).2f) "
+"&times; (%(object.maxX).2f, %(object.maxY).2f, %(object.maxZ).2f)"
 
 #: src/octoprint/static/js/app/viewmodels/files.js:717
 msgid ""
