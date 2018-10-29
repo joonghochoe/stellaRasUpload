@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: StellaRasPrint\n"
 "Report-Msgid-Bugs-To: i18n@octoprint.org\n"
 "POT-Creation-Date: 2018-07-25 13:37+0200\n"
-"PO-Revision-Date: 2018-10-28 17:18+0900\n"
+"PO-Revision-Date: 2018-10-29 10:50+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Last-Translator: Joongho Choe <joongho.choe@gmail.com>\n"
 "Language-Team: joongho.choe@gmail.com\n"
 "Language: ko\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2\n"
 
 #: src/octoprint/plugins/action_command_prompt/__init__.py:93
 msgid "Action Command Prompt"
@@ -4467,7 +4467,7 @@ msgstr ""
 "상태로 두지 마십시오</strong>.\n"
 "    소비자 프린터 전자 제품은 때때로 화재가 발생할 수 있습니다. 따라서 누군가는 "
 "가까운 곳에 머물러 있어야 이러한\n"
-"    큰 재앙의 경우에 물리적으로 개입할 수 있습니다.\n"
+"    경우에 물리적으로 개입할 수 있습니다.\n"
 
 #: src/octoprint/templates/dialogs/wizard/firstrun_end.jinja2:17
 msgid "If you enjoy OctoPrint..."
@@ -5170,7 +5170,7 @@ msgstr "스냅샷 시간 제한"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamSnapshotUrl.jinja2:1
 msgid "URL to use for retrieving webcam snapshot images for timelapse creation"
-msgstr ""
+msgstr "타임랩스를 위해 웹캠 스냅샷 이미지를 가져오는데 사용할 URL"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamSnapshotUrl.jinja2:2
 msgid "Snapshot URL"
@@ -5178,11 +5178,11 @@ msgstr "스냅샷 URL"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamSnapshotUrl.jinja2:8
 msgid "Fully qualified URL, needs to be reachable by OctoPrint's server"
-msgstr ""
+msgstr "서버에서 연결할 수 있어야 합니다"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamStreamRatio.jinja2:1
 msgid "Aspect ratio of the webcam stream, either 16:9 or 4:3"
-msgstr ""
+msgstr "웹캠 스트림의 가로 세로 비율, 16:9 또는 4:3"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamStreamRatio.jinja2:2
 msgid "Stream aspect ratio"
@@ -5193,6 +5193,7 @@ msgid ""
 "If the stream has a different aspect ratio than configured here it will be "
 "letterboxed."
 msgstr ""
+"스트림의 가로 세로 비율이 여기에 구성된 것과 다를 경우 레터박스 비율이 됩니다."
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamStreamTimeout.jinja2:1
 msgid "Timeout after which to unload the stream if the control tab is not visible"
@@ -5200,15 +5201,15 @@ msgstr ""
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamStreamTimeout.jinja2:2
 msgid "Stream timeout"
-msgstr "스트 시간 제한"
+msgstr "스트림 시간 제한"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamStreamUrl.jinja2:1
 msgid "URL to embed into the UI for live viewing of the webcam stream"
-msgstr "림"
+msgstr "웹캠 스트림의 실시간 보기를 위해 UI에 포함할 URL"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamStreamUrl.jinja2:2
 msgid "Stream URL"
-msgstr ""
+msgstr "스트림 URL"
 
 #: src/octoprint/templates/snippets/settings/webcam/webcamStreamUrl.jinja2:8
 msgid ""
