@@ -49,6 +49,13 @@ _APPNAME = "OctoPrint"
 
 _instance = None
 
+if sys.platform == "win32":
+	DEFAULT_UPLOADFOLDER = None
+elif sys.platform == "Linux" and os.uname()[1] == "raspberrypi":
+	DEFAULT_UPLOADFOLDER = "/home/pi/uploads"
+else:
+	DEFAULT_UPLOADFOLDER = "/home/junonara/uploads"
+
 def settings(init=False, basedir=None, configfile=None):
 	"""
 	Factory method for initially constructing and consecutively retrieving the :class:`~octoprint.settings.Settings`
@@ -251,7 +258,7 @@ default_settings = {
 		"g90InfluencesExtruder": False
 	},
 	"folder": {
-		"uploads": None,
+		"uploads": DEFAULT_UPLOADFOLDER,
 		"timelapse": None,
 		"timelapse_tmp": None,
 		"logs": None,
