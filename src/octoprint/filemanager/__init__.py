@@ -31,13 +31,13 @@ extensions = dict(
 def full_extension_tree():
 	result = dict(
 		# extensions for 3d model files
-		model=dict(
-			stl=ContentTypeMapping(["stl"], "application/sla")
-		),
+		# model=dict(
+		# 	stl=ContentTypeMapping(["stl"], "application/sla")
+		# ),
 		# extensions for printable machine code
 		machinecode=dict(
 			# STELLAMOVE
-			gcode=ContentTypeMapping(["gcode", "gco", "g"], "text/plain"),
+			# gcode=ContentTypeMapping(["gcode", "gco", "g"], "text/plain"),
 			g4rcode=ContentTypeMapping(["g4r", "G4R"], "text/plain")
 		)
 	)
