@@ -52,9 +52,9 @@ _instance = None
 if sys.platform == "win32":
 	DEFAULT_UPLOADFOLDER = None
 elif sys.platform == "Linux" and os.uname()[1] == "raspberrypi":
-	DEFAULT_UPLOADFOLDER = "/home/pi/uploads"
+	DEFAULT_UPLOADFOLDER = "/home/pi/Gdatas/uploads"
 else:
-	DEFAULT_UPLOADFOLDER = "/home/junonara/uploads"
+	DEFAULT_UPLOADFOLDER = "/home/junonara/Gdatas/uploads"
 
 def settings(init=False, basedir=None, configfile=None):
 	"""
