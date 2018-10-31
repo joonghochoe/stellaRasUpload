@@ -43,6 +43,7 @@
             <span class="help-block" data-bind="visible: testFolderConfigBroken.logs() || testFolderConfigOk.logs(), text: testFolderConfigText.logs"></span>
         </div>
     </div>
+    {# STELLAMOVE: hide watched folder
     <div class="control-group" data-bind="css: {error: testFolderConfigBroken.watched, success: testFolderConfigOk.watched}">
         <label class="control-label" for="settings-folderWatched">{{ _('Watched Folder') }}</label>
         <div class="controls">
@@ -60,7 +61,7 @@
             </label>
         </div>
     </div>
-
+    #}
     <h3>{{ _('Disk space thresholds') }}</h3>
 
     <p>{{ _('If the free disk space falls below these thresholds, OctoPrint will warn the user.') }}</p>
