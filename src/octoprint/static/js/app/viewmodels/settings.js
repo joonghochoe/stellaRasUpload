@@ -62,8 +62,9 @@ $(function() {
         self.appearance_available_colors = ko.observable([
             {key: "default", name: gettext("default")},
             {key: "red", name: gettext("red")},
-            {key: "orange", name: gettext("orange")},
-            {key: "yellow", name: gettext("yellow")},
+// STELLAMOVE
+//            {key: "orange", name: gettext("orange")},
+//            {key: "yellow", name: gettext("yellow")},
             {key: "green", name: gettext("green")},
             {key: "blue", name: gettext("blue")},
             {key: "violet", name: gettext("violet")},
@@ -75,10 +76,11 @@ $(function() {
             switch (color) {
                 case "red":
                     return gettext("red");
-                case "orange":
-                    return gettext("orange");
-                case "yellow":
-                    return gettext("yellow");
+// STELLAMOVE
+//                case "orange":
+//                    return gettext("orange");
+//                case "yellow":
+//                    return gettext("yellow");
                 case "green":
                     return gettext("green");
                 case "blue":
