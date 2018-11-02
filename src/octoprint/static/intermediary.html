@@ -201,7 +201,7 @@
                         // our cached.gif loaded, so the index is cached now, let's reload
                         indexCached = true;
                         message.className = "pulsate1 green";
-                        message.innerText = "OctoPrint server ready, reloading page...";
+                        message.innerText = "Server ready, reloading page...";
                         reloadnow.style.display = "none";
 
                         reload();
@@ -219,7 +219,7 @@
                         // our online.gif loaded, so the server is up, let's wait for it to become ready
                         serverIsOnline = true;
 
-                        message.innerText = "OctoPrint server started, waiting for it to get ready...";
+                        message.innerText = "Server started, waiting for it to get ready...";
                         reloadnowlink.onclick = function() {
                             indexCached = true; // not really, but we fake it
 
@@ -228,7 +228,7 @@
                             reloadnow.style.display = "none";
 
                             reload();
-                        };
+                        };버
                         reloadnow.style.display = "block";
 
                         ping(indexCachedUrl, timeout, indexCachedCallback);
@@ -287,7 +287,7 @@
                 <div class="outer">
                     <div class="inner">
                         <div class="content">
-                            <h1 id="message" class="pulsate3">OctoPrint is still starting up, please wait...</h1>
+                            <h1 id="message" class="pulsate3">Server is still starting up, please wait...</h1>
                             <small id="reloadnow" style="display: none"><a id="reloadnowlink" class="normal" href="javascript:void(0)">Don't wait, reload now!</a></small>
                         </div>
                     </div>
