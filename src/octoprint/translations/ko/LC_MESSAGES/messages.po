@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: StellaRasPrint\n"
 "Report-Msgid-Bugs-To: i18n@octoprint.org\n"
 "POT-Creation-Date: 2018-07-25 13:37+0200\n"
-"PO-Revision-Date: 2018-10-31 14:51+0900\n"
+"PO-Revision-Date: 2018-11-02 10:53+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -765,7 +765,7 @@ msgstr ""
 
 #: src/octoprint/plugins/cura/templates/snippets/settings/cura/engineLog.jinja2:4
 msgid "Log the output of CuraEngine to plugin_cura_engine.log"
-msgstr "CuraEngine의 출력을 plugin_cura_engine.log에 기록합니다."
+msgstr "슬라이서의 출력을 plugin_cura_engine.log에 기록합니다"
 
 #: src/octoprint/plugins/cura/templates/snippets/settings/cura/enginePath.jinja2:2
 msgid "Path to CuraEngine"
@@ -1419,7 +1419,7 @@ msgstr ""
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:203
 msgid "... from an uploaded archive"
-msgstr "업로드 된 보관소에서..."
+msgstr "업로드 된 보관소에서"
 
 #: src/octoprint/plugins/pluginmanager/templates/pluginmanager_settings.jinja2:216
 msgid ""
@@ -3039,7 +3039,7 @@ msgstr "출력 시작"
 #: src/octoprint/static/js/app/viewmodels/slicing.js:149
 #, python-format
 msgid "Slicing %(filename)s"
-msgstr ""
+msgstr "슬라이스 %(filename)s"
 
 #: src/octoprint/static/js/app/viewmodels/slicing.js:186
 msgid "Cannot slice on the same device while printing"
@@ -3145,7 +3145,7 @@ msgstr "타임랩스를 삭제할 수 없습니다"
 #: src/octoprint/static/js/app/viewmodels/timelapse.js:251
 #, python-format
 msgid "You are about to delete timelapse file \"%(name)s\"."
-msgstr ""
+msgstr "타임랩스 파일 \"%(name)s\"를 삭제하려고 합니다."
 
 #: src/octoprint/static/js/app/viewmodels/timelapse.js:263
 #, python-format
@@ -3175,7 +3175,7 @@ msgstr ""
 #: src/octoprint/static/js/app/viewmodels/timelapse.js:327
 #, python-format
 msgid "Deleted %(filename)s..."
-msgstr ""
+msgstr "%(filename)s 삭제..."
 
 #: src/octoprint/static/js/app/viewmodels/timelapse.js:316
 #: src/octoprint/static/js/app/viewmodels/timelapse.js:330
@@ -3324,6 +3324,8 @@ msgid ""
 "Slicing is currently disabled since no slicer has been configured yet. Please "
 "configure a slicer under \"Settings\"."
 msgstr ""
+"슬라이서는 아직 구성되지 않았으므로 현재 비활성화되어 있습니다. '설정'에서 슬라"
+"이서를 구성하십시오."
 
 #: src/octoprint/templates/dialogs/slicing.jinja2:11
 msgid ""
@@ -3919,6 +3921,8 @@ msgid ""
 "incredibly useful for debugging any issues observed in the communication "
 "between OctoPrint and your printer."
 msgstr ""
+"성능에 영향을 줄 수 있지만, <code>serial.log</code>는 서버와 장비간의 통신에서 "
+"나온 문제를 디버깅하는 데 매우 유용할 수 있습니다."
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:61
 msgid "Query intervals"
@@ -3961,7 +3965,7 @@ msgstr "펌웨어 자동 보고 간격"
 msgid ""
 "Interval in which to poll for the SD printing status information from the "
 "printer while printing"
-msgstr ""
+msgstr "출력하는 동안 장비에서 SD 인쇄 상태 정보를 폴링하는 간격"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:90
 msgid "SD status interval (polling)"
@@ -4029,16 +4033,17 @@ msgstr ""
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:139
 msgid "Autodetection timeout"
-msgstr ""
+msgstr "자동 감지 시간 초과"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:147
 msgid ""
 "Time after which to consider a position query on pause or cancel to have failed"
 msgstr ""
+"일시 중지 또는 취소에 대한 위치 쿼리를 실패한 것으로 간주하는데 걸리는 시간"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:148
 msgid "Position query timeout"
-msgstr ""
+msgstr "위치 쿼리 시간 초과"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:159
 msgid ""
@@ -4319,7 +4324,7 @@ msgstr ""
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:380
 msgid "Event based position logging"
-msgstr ""
+msgstr "이벤트 기반 위치 기록"
 
 #: src/octoprint/templates/dialogs/settings/serialconnection.jinja2:383
 msgid "Log position on pause"
@@ -5344,7 +5349,7 @@ msgstr "랜더러 옵션"
 
 #: src/octoprint/templates/tabs/gcodeviewer.jinja2:39
 msgid "Sync with job progress"
-msgstr ""
+msgstr "작업 진행과 동기화"
 
 #: src/octoprint/templates/tabs/gcodeviewer.jinja2:44
 msgid "Center viewport on model"
@@ -5560,6 +5565,8 @@ msgid ""
 "OctoPrint will rate limit snapshots to this minimum interval. This it to "
 "prevent against performance issues with vase mode/continous z prints."
 msgstr ""
+"최소 간격으로 스냅샷을 제한합니다. 화병 모드/연속 z 인쇄의 성능 문제를 방지합니"
+"다."
 
 #: src/octoprint/templates/tabs/timelapse.jinja2:33
 msgid "Snapshot interval"
