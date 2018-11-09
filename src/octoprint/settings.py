@@ -50,10 +50,7 @@ _APPNAME = "OctoPrint"
 _instance = None
 
 if sys.platform.startswith('linux'):
-	if os.uname()[1] == "raspberrypi":
-		DEFAULT_UPLOADFOLDER = "/home/pi/Gdatas/uploads"
-	else:
-		DEFAULT_UPLOADFOLDER = "/home/junonara/Gdatas/uploads"
+	DEFAULT_UPLOADFOLDER = "/home/pi/Gdatas/uploads"
 else:
 	DEFAULT_UPLOADFOLDER = None
 
