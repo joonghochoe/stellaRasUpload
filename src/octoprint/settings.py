@@ -50,7 +50,7 @@ _APPNAME = "OctoPrint"
 _instance = None
 
 if sys.platform.startswith('linux'):
-	DEFAULT_UPLOADFOLDER = "/home/pi/Gdatas/uploads"
+	DEFAULT_UPLOADFOLDER = os.path.expanduser(os.path.join("~", "Gdatas", "uploads"))
 else:
 	DEFAULT_UPLOADFOLDER = None
 
