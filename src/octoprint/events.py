@@ -214,7 +214,7 @@ class EventManager(object):
 			# TODO v1.3.0 Remove again
 			import copy
 			legacy_payload = copy.deepcopy(payload)
-			legacy_payload["type"] = "gcode"
+			legacy_payload["type"] = "g4rcode"
 			q.put((event, legacy_payload))
 
 	def subscribe(self, event, callback):

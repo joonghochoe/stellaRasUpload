@@ -874,7 +874,7 @@ $(function() {
                 return;
             }
 
-            if (payload.type !== "gcode") {
+            if (payload.type !== "g4rcode") {
                 return;
             }
 
