@@ -38,7 +38,7 @@ def full_extension_tree():
 		machinecode=dict(
 			# STELLAMOVE
 			# gcode=ContentTypeMapping(["gcode", "gco", "g"], "text/plain"),
-			g4rcode=ContentTypeMapping(["g4r", "G4R"], "text/plain")
+			g4rcode=ContentTypeMapping(["gcode", "g4r", "G4R"], "text/plain")
 		)
 	)
 
